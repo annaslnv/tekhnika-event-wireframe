@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Кейс (пример) — Портфолио</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/"><span>Техника</span><span>событий</span></a>
+      <button id="nav-toggle" class="nav-toggle" type="button" aria-label="Меню" aria-expanded="false">Меню</button>
+      <nav id="site-nav" class="site-nav" aria-label="Навигация">
+        <a href="/">Главная</a>
+        <div class="nav-parent">
+          <a href="/uslugi/" class="nav-parent-label">Услуги</a>
+          <div class="nav-dropdown nav-dropdown-simple">
+            <a class="nav-dropdown-item" href="/uslugi/tehnicheskoe-obespechenie/">Техническое обеспечение под ключ</a>
+            <a class="nav-dropdown-item" href="/uslugi/arenda-oborudovaniya/">Аренда оборудования</a>
+            <a class="nav-dropdown-item" href="/gotovye-resheniya/">Готовые решения</a>
+          </div>
+        </div>
+        <a href="/portfolio/">Портфолио</a>
+        <div class="nav-parent">
+          <a href="/o-kompanii/" class="nav-parent-label">О нас</a>
+          <div class="nav-dropdown nav-dropdown-simple">
+            <a class="nav-dropdown-item" href="/o-kompanii/#o-kompanii">О компании</a>
+            <a class="nav-dropdown-item" href="/o-kompanii/#kak-rabotaem">Как мы работаем</a>
+            <a class="nav-dropdown-item" href="/o-kompanii/#tipy-meropriyatiy">Типы мероприятий</a>
+            <a class="nav-dropdown-item" href="/o-kompanii/#geografiya">География работ</a>
+            <a class="nav-dropdown-item" href="/o-kompanii/#otzyvy">Отзывы и рекомендации</a>
+            <a class="nav-dropdown-item" href="/o-kompanii/#faq">Вопросы и ответы</a>
+          </div>
+        </div>
+        <a href="/kontakty/">Контакты</a>
+      </nav>
+      <div class="header-cta">
+        <button type="button" class="btn-call" data-modal="callback">Обратный звонок</button>
+        <a class="header-phone" href="tel:+79062027217">8 (906) 202-72-17</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="wf-hero">
+        <h1>Кейс: пример</h1>
+        <p>Шаблон страницы кейса.</p>
+      </section>
+
+      <section class="section paper">
+        <div class="section-head">
+          <h2 class="section-title">Медиа</h2>
+        </div>
+        <div class="section-body grid cols-2">
+          <div class="placeholder ph-16x9">Фото</div>
+          <div class="placeholder">Галерея</div>
+        </div>
+        <div class="section-body" style="padding-top:0;">
+          <div class="placeholder">Видео</div>
+        </div>
+      </section>
+
+      <section class="section paper">
+        <div class="section-head">
+          <h2 class="section-title">Задача и решение</h2>
+        </div>
+        <div class="section-body grid cols-2">
+          <div class="placeholder">Задачи организатора</div>
+          <div class="placeholder">Что сделали мы</div>
+        </div>
+      </section>
+
+      <section class="section paper">
+        <div class="section-head">
+          <h2 class="section-title">3D‑макет</h2>
+        </div>
+        <div class="section-body placeholder">Схема 3D</div>
+      </section>
+
+      <section class="screen-section">
+        <div class="container">
+          <h2>Нужна помощь с техническим обеспечением вашего события? Обращайтесь</h2>
+          <div class="grid cols-3" style="margin-top: var(--heading-gap);">
+            <div class="card">
+              <h3>Сориентируем в деталях</h3>
+              <p style="margin: 0; font-size: 15px; color: var(--muted);">Прорабатываем техзадачу и схему площадки до монтажа</p>
+            </div>
+            <div class="card">
+              <h3>Составим смету и ТЗ после брифа</h3>
+              <p style="margin: 0; font-size: 15px; color: var(--muted);">Узнаем детали и представим понятный расчёт без лишних итераций</p>
+            </div>
+            <div class="card">
+              <h3>Приедем на место</h3>
+              <p style="margin: 0; font-size: 15px; color: var(--muted);">Находимся в Великом Новгороде, выезжаем по Северо-Западу и в ЦФО</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="contacts-block" id="contacts">
+      <div class="container">
+        <h2>Контакты</h2>
+        <div class="grid cols-2 contacts-grid">
+          <div class="form-side">
+            <p class="contact-phone"><a href="tel:+79062027217">8 (906) 202-72-17</a></p>
+            <div class="contacts-form-box">
+              <h3 class="contacts-form-title">Оставить заявку на обратный звонок</h3>
+              <form class="wf-form wf-form-no-labels" action="#" method="post">
+                <input type="text" name="name" placeholder="Имя" />
+                <input type="tel" name="phone" placeholder="Телефон" />
+                <textarea name="message" placeholder="Комментарий"></textarea>
+                <div class="form-checkbox">
+                  <input type="checkbox" id="pk-agree" name="agree" required />
+                  <label for="pk-agree">Я соглашаюсь с <a href="/politika-konfidencialnosti/">политикой конфиденциальности</a> и принимаю условия <a href="/polzovatelskoe-soglashenie/">пользовательского соглашения</a></label>
+                </div>
+                <button type="submit" class="wf-btn primary">Отправить</button>
+              </form>
+            </div>
+            <div class="contacts-vk-box">
+              <p class="contacts-vk-label">Следите за нашими новостями</p>
+              <a href="https://vk.com/tekhnikaevent" target="_blank" rel="noopener" class="wf-btn">Вконтакте</a>
+            </div>
+          </div>
+          <div class="contact-side">
+            <div class="placeholder contacts-map">Фото</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div>
+          <div style="font-weight:700;color:var(--ink);">Техника событий</div>
+          <div class="note">Работаем по договору · 8 (906) 202‑72‑17 · vk.ru/tekhnikaevent</div>
+        </div>
+        <div class="spacer"></div>
+        <div class="footer-links"><a href="/portfolio/">← Вернуться в портфолио</a></div>
+      </div>
+    </div>
+  </footer>
+  <script src="/app.js"></script>
+</body>
+</html>
+

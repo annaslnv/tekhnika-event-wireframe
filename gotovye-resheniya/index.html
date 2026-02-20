@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Готовые решения — Техника событий</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/"><span>Техника</span><span>событий</span></a>
+      <button id="nav-toggle" class="nav-toggle" type="button" aria-label="Меню" aria-expanded="false">Меню</button>
+      <nav id="site-nav" class="site-nav" aria-label="Навигация">
+        <a href="/">Главная</a>
+        <div class="nav-parent">
+          <a href="/uslugi/" class="nav-parent-label">Услуги</a>
+          <div class="nav-dropdown nav-dropdown-simple">
+            <a class="nav-dropdown-item" href="/uslugi/tehnicheskoe-obespechenie/">Техническое обеспечение под ключ</a>
+            <a class="nav-dropdown-item" href="/uslugi/arenda-oborudovaniya/">Аренда оборудования</a>
+            <a class="nav-dropdown-item" href="/gotovye-resheniya/">Готовые решения</a>
+          </div>
+        </div>
+        <a href="/portfolio/">Портфолио</a>
+        <div class="nav-parent">
+          <a href="/o-kompanii/" class="nav-parent-label">О нас</a>
+          <div class="nav-dropdown nav-dropdown-simple">
+            <a class="nav-dropdown-item" href="/o-kompanii/#o-kompanii">О компании</a>
+            <a class="nav-dropdown-item" href="/o-kompanii/#kak-rabotaem">Как мы работаем</a>
+            <a class="nav-dropdown-item" href="/o-kompanii/#tipy-meropriyatiy">Типы мероприятий</a>
+            <a class="nav-dropdown-item" href="/o-kompanii/#geografiya">География работ</a>
+            <a class="nav-dropdown-item" href="/o-kompanii/#otzyvy">Отзывы и рекомендации</a>
+            <a class="nav-dropdown-item" href="/o-kompanii/#faq">Вопросы и ответы</a>
+          </div>
+        </div>
+        <a href="/kontakty/">Контакты</a>
+      </nav>
+      <div class="header-cta">
+        <button type="button" class="btn-call" data-modal="callback">Обратный звонок</button>
+        <a class="header-phone" href="tel:+79062027217">8 (906) 202-72-17</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="screen-section">
+      <div class="container">
+        <h2>Готовые решения</h2>
+        <p style="margin: 0 0 24px; color: var(--muted);">Пакеты под размер аудитории и площадки.</p>
+        <div class="grid cols-3">
+          <button type="button" class="card card-btn" data-modal="ready-50">
+            <div class="placeholder ph-card" style="margin-bottom: 12px;">Фото</div>
+            <h3>До 50 участников</h3>
+            <p>Базовое техобеспечение для компактных мероприятий.</p>
+          </button>
+          <button type="button" class="card card-btn" data-modal="ready-100-300">
+            <div class="placeholder ph-card" style="margin-bottom: 12px;">Фото</div>
+            <h3>100–300 участников</h3>
+            <p>Универсальный пакет для корпоративов и деловых событий.</p>
+          </button>
+          <button type="button" class="card card-btn" data-modal="ready-300">
+            <div class="placeholder ph-card" style="margin-bottom: 12px;">Фото</div>
+            <h3>300+ участников</h3>
+            <p>Комплекс для больших площадок и насыщенной программы.</p>
+          </button>
+        </div>
+        <p style="margin-top: 24px;"><button type="button" class="wf-btn primary" data-modal="komplekt">Подобрать решение под задачу</button></p>
+      </div>
+    </section>
+
+    <section class="contacts-block" id="contacts">
+      <div class="container">
+        <h2>Контакты</h2>
+        <div class="grid cols-2 contacts-grid">
+          <div class="form-side">
+            <p class="contact-phone"><a href="tel:+79062027217">8 (906) 202-72-17</a></p>
+            <div class="contacts-form-box">
+              <h3 class="contacts-form-title">Оставить заявку на обратный звонок</h3>
+              <form class="wf-form wf-form-no-labels" action="#" method="post">
+                <input type="text" name="name" placeholder="Имя" />
+                <input type="tel" name="phone" placeholder="Телефон" />
+                <textarea name="message" placeholder="Комментарий"></textarea>
+                <div class="form-checkbox">
+                  <input type="checkbox" id="gr-agree" name="agree" required />
+                  <label for="gr-agree">Я соглашаюсь с <a href="/politika-konfidencialnosti/">политикой конфиденциальности</a> и принимаю условия <a href="/polzovatelskoe-soglashenie/">пользовательского соглашения</a></label>
+                </div>
+                <button type="submit" class="wf-btn primary">Отправить</button>
+              </form>
+            </div>
+            <div class="contacts-vk-box">
+              <p class="contacts-vk-label">Следите за нашими новостями</p>
+              <a href="https://vk.com/tekhnikaevent" target="_blank" rel="noopener" class="wf-btn">Вконтакте</a>
+            </div>
+          </div>
+          <div class="contact-side">
+            <div class="placeholder contacts-map">Фото</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>
+        <a class="brand" href="/">Техника событий</a>
+      </div>
+      <nav class="footer-nav">
+        <a href="/">Главная</a>
+        <a href="/uslugi/">Услуги</a>
+        <a href="/portfolio/">Портфолио</a>
+        <a href="/o-kompanii/">О нас</a>
+        <a href="/kontakty/">Контакты</a>
+      </nav>
+      <div class="footer-legal" style="width: 100%;">
+        <a href="/politika-konfidencialnosti/">Политика конфиденциальности</a>
+        <span style="margin: 0 8px;">·</span>
+        <a href="/politika-konfidencialnosti/#soglasie">Согласие на обработку персональных данных</a>
+        <span style="margin: 0 8px;">·</span>
+        <a href="#" data-modal="requisites">Реквизиты</a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="modal-requisites" class="modal-overlay" aria-hidden="true">
+    <div class="modal-box modal-content-box" style="position: relative;">
+      <button type="button" class="modal-close" aria-label="Закрыть" data-close-modal>&times;</button>
+      <h3>Реквизиты</h3>
+      <p class="modal-subtitle">Описание</p>
+    </div>
+  </div>
+  <div id="modal-ready-50" class="modal-overlay" aria-hidden="true">
+    <div class="modal-box modal-content-box modal-ready-pack" style="position: relative;">
+      <button type="button" class="modal-close" aria-label="Закрыть" data-close-modal>&times;</button>
+      <h3>Пакет «До 50 человек»</h3>
+      <p class="modal-subtitle">Базовое техобеспечение для камерных событий: речь, музыка, фон, простой свет</p>
+      <p class="modal-block-title">Подходит для</p>
+      <p class="modal-block-text">Презентации, лекции, частные праздники, камерные корпоративы, небольшие концерты и сеты</p>
+      <p class="modal-block-title">Что обычно входит</p>
+      <ul class="modal-list">
+        <li>Звук: комплект акустики под зал или улицу, микшер, базовая коммутация</li>
+        <li>Микрофоны: 1–2 радиомикрофона для ведущего или спикера (по сценарию — больше)</li>
+        <li>Свет: базовая заливка и акцентный свет для сцены или зоны выступления</li>
+        <li>Видео (опционально): подключение к экрану/проектору площадки или простая выдача контента</li>
+        <li>Работы: доставка и монтаж по запросу, настройка перед стартом, демонтаж</li>
+      </ul>
+      <p class="modal-block-title">Что уточняем перед расчётом</p>
+      <ul class="modal-list">
+        <li>площадка (зал/улица), размеры, доступ к электрике</li>
+        <li>формат (речь/музыка/смешанный) и сколько микрофонов</li>
+        <li>нужен ли экран, контент или трансляция</li>
+      </ul>
+      <div class="modal-cta-row">
+        <button type="button" class="wf-btn primary" data-modal="zadacha">Запросить смету</button>
+        <button type="button" class="wf-btn" data-modal="zadacha">Обсудить задачу</button>
+      </div>
+    </div>
+  </div>
+  <div id="modal-ready-100-300" class="modal-overlay" aria-hidden="true">
+    <div class="modal-box modal-content-box modal-ready-pack" style="position: relative;">
+      <button type="button" class="modal-close" aria-label="Закрыть" data-close-modal>&times;</button>
+      <h3>Пакет «50–300 человек»</h3>
+      <p class="modal-subtitle">Универсальный комплект для корпоративов и деловых событий: уверенная речь, музыкальная программа, поддержка контента</p>
+      <p class="modal-block-title">Подходит для</p>
+      <p class="modal-block-text">Конференции, корпоративы, церемонии, презентации брендов, open-air среднего масштаба</p>
+      <p class="modal-block-title">Что обычно входит</p>
+      <ul class="modal-list">
+        <li>Звук: комплект под аудиторию и акустику площадки, микшер, процессинг, коммутация</li>
+        <li>Микрофоны: набор под сценарий (ведущий + спикеры/артисты), стойки/петлички по задаче</li>
+        <li>Свет: сценический базовый сет и управление сценами для ключевых моментов</li>
+        <li>Видео: выдача презентаций и роликов, коммутация источников, контроль сигнала</li>
+        <li>LED/экран (опционально): подбор конфигурации и подключение под контент</li>
+        <li>Работы: монтаж и настройка, саундчек/тест контента, сопровождение на площадке по запросу</li>
+      </ul>
+      <p class="modal-block-title">Что уточняем перед расчётом</p>
+      <ul class="modal-list">
+        <li>сколько зон (сцена/зал/фойе), нужна ли дублирующая озвучка</li>
+        <li>сколько источников видео и кто переключает (мы или ваш режиссёр)</li>
+        <li>тайминг монтажа и доступ на площадку</li>
+      </ul>
+      <div class="modal-cta-row">
+        <button type="button" class="wf-btn primary" data-modal="zadacha">Запросить смету</button>
+        <button type="button" class="wf-btn" data-modal="zadacha">Обсудить задачу</button>
+      </div>
+    </div>
+  </div>
+  <div id="modal-ready-300" class="modal-overlay" aria-hidden="true">
+    <div class="modal-box modal-content-box modal-ready-pack" style="position: relative;">
+      <button type="button" class="modal-close" aria-label="Закрыть" data-close-modal>&times;</button>
+      <h3>Пакет «300+ человек»</h3>
+      <p class="modal-subtitle">Комплекс для больших площадок и насыщенной программы: масштабный звук, сценический свет, видео/LED и стабильная работа команды</p>
+      <p class="modal-block-title">Подходит для</p>
+      <p class="modal-block-text">Крупные концерты, фестивали, городские мероприятия, форумы, масштабные корпоративы, open-air</p>
+      <p class="modal-block-title">Что обычно входит</p>
+      <ul class="modal-list">
+        <li>Звук: расчет под большие пространства, усиление под дальние зоны, резервирование ключевых элементов</li>
+        <li>Микрофоны: расширенный комплект под программу, отдельные линии по задаче</li>
+        <li>Свет: сценическое освещение с программированием сцен и управлением по регламенту</li>
+        <li>Видео/LED: конфигурация экранов под точки просмотра, выдача контента/сигнала, техконтроль</li>
+        <li>Трансляция (опционально): эфир или гибридный формат, контроль картинки/звука/сигнала</li>
+        <li>Работы и команда: логистика, монтаж, коммутация, сопровождение на площадке, демонтаж</li>
+      </ul>
+      <p class="modal-block-title">Что уточняем перед расчётом</p>
+      <ul class="modal-list">
+        <li>схема площадки/сцены и требования площадки/организатора</li>
+        <li>программа по таймингу и технический регламент</li>
+        <li>необходимость резервов и условия работы (улица, ветер, температура)</li>
+      </ul>
+      <div class="modal-cta-row">
+        <button type="button" class="wf-btn primary" data-modal="zadacha">Запросить смету</button>
+        <button type="button" class="wf-btn" data-modal="zadacha">Обсудить задачу</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-zadacha" class="modal-overlay" aria-hidden="true">
+    <div class="modal-box modal-form-box" style="position: relative;">
+      <button type="button" class="modal-close" aria-label="Закрыть" data-close-modal>&times;</button>
+      <h3>Обсудим вашу задачу</h3>
+      <form class="wf-form wf-form-no-labels">
+        <input type="text" name="name" placeholder="Имя" />
+        <input type="tel" name="phone" placeholder="Телефон" />
+        <input type="text" name="city" placeholder="Город" />
+        <textarea name="message" placeholder="Комментарий"></textarea>
+        <div class="form-checkbox">
+          <input type="checkbox" id="zadacha-gr-agree" name="agree" required />
+          <label for="zadacha-gr-agree">Я соглашаюсь с <a href="/politika-konfidencialnosti/">политикой конфиденциальности</a> и принимаю условия <a href="/polzovatelskoe-soglashenie/">пользовательского соглашения</a></label>
+        </div>
+        <button type="submit" class="wf-btn primary">Отправить</button>
+        <p class="modal-footnote">Работаем по договору. Состав оборудования зависит от площадки и сценария.</p>
+      </form>
+    </div>
+  </div>
+  <div id="modal-callback" class="modal-overlay" aria-hidden="true">
+    <div class="modal-box" style="position: relative;">
+      <button type="button" class="modal-close" aria-label="Закрыть" data-close-modal>&times;</button>
+      <h3>Обратный звонок</h3>
+      <form class="wf-form wf-form-no-labels">
+        <input type="text" name="name" placeholder="Имя" />
+        <input type="tel" name="phone" placeholder="Телефон" />
+        <div class="form-checkbox">
+          <input type="checkbox" id="cb-agree" name="agree" required />
+          <label for="cb-agree">Я соглашаюсь с <a href="/politika-konfidencialnosti/">политикой конфиденциальности</a> и принимаю условия <a href="/polzovatelskoe-soglashenie/">пользовательского соглашения</a></label>
+        </div>
+        <button type="submit" class="wf-btn primary">Отправить</button>
+      </form>
+    </div>
+  </div>
+  <div id="modal-komplekt" class="modal-overlay" aria-hidden="true">
+    <div class="modal-box" style="position: relative;">
+      <button type="button" class="modal-close" aria-label="Закрыть" data-close-modal>&times;</button>
+      <h3>Рассчитать комплект под задачу</h3>
+      <form class="wf-form wf-form-no-labels">
+        <input type="text" name="name" placeholder="Имя" />
+        <input type="tel" name="phone" placeholder="Телефон" />
+        <input type="email" name="email" placeholder="Email" />
+        <textarea name="message" placeholder="Формат, количество участников, площадка"></textarea>
+        <div class="form-checkbox">
+          <input type="checkbox" id="komplekt-gr-agree" name="agree" required />
+          <label for="komplekt-gr-agree">Я соглашаюсь с <a href="/politika-konfidencialnosti/">политикой конфиденциальности</a> и принимаю условия <a href="/polzovatelskoe-soglashenie/">пользовательского соглашения</a></label>
+        </div>
+        <button type="submit" class="wf-btn primary">Отправить</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>

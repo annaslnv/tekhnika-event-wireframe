@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Мероприятия — Техника событий</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/"><span>Техника</span><span>событий</span></a>
+      <button id="nav-toggle" class="nav-toggle" type="button" aria-label="Меню" aria-expanded="false">Меню</button>
+      <nav id="site-nav" class="site-nav" aria-label="Навигация">
+        <a href="/">Главная</a>
+        <div class="nav-parent">
+          <a href="/uslugi/" class="nav-parent-label">Услуги</a>
+          <div class="nav-dropdown nav-dropdown-simple">
+            <a class="nav-dropdown-item" href="/uslugi/tehnicheskoe-obespechenie/">Техническое обеспечение под ключ</a>
+            <a class="nav-dropdown-item" href="/uslugi/arenda-oborudovaniya/">Аренда оборудования</a>
+            <a class="nav-dropdown-item" href="/gotovye-resheniya/">Готовые решения</a>
+          </div>
+        </div>
+        <a href="/portfolio/">Портфолио</a>
+        <div class="nav-parent">
+          <a href="/o-kompanii/" class="nav-parent-label">О нас</a>
+          <div class="nav-dropdown nav-dropdown-simple">
+            <a class="nav-dropdown-item" href="/o-kompanii/#o-kompanii">О компании</a>
+            <a class="nav-dropdown-item" href="/o-kompanii/#kak-rabotaem">Как мы работаем</a>
+            <a class="nav-dropdown-item" href="/o-kompanii/#tipy-meropriyatiy">Типы мероприятий</a>
+            <a class="nav-dropdown-item" href="/o-kompanii/#geografiya">География работ</a>
+            <a class="nav-dropdown-item" href="/o-kompanii/#otzyvy">Отзывы и рекомендации</a>
+            <a class="nav-dropdown-item" href="/o-kompanii/#faq">Вопросы и ответы</a>
+          </div>
+        </div>
+        <a href="/kontakty/">Контакты</a>
+      </nav>
+      <div class="header-cta">
+        <button type="button" class="btn-call" data-modal="callback">Обратный звонок</button>
+        <a class="header-phone" href="tel:+79062027217">8 (906) 202-72-17</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1) HERO -->
+    <section class="hero-full">
+      <div class="hero-bg">
+        <div class="placeholder ph-hero">Фото / Видео</div>
+      </div>
+      <div class="container">
+        <h1>Работаем с мероприятиями любого масштаба</h1>
+        <ul class="hero-bullets">
+          <li>Подбираем решение под формат, сроки и бюджет: звук • свет • видео • LED • трансляции</li>
+          <li>Предлагаем аренду, а также обеспечение под ключ</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 2) Выберите формат -->
+    <section class="screen-section">
+      <div class="container">
+        <h2>Выберите формат</h2>
+        <div class="grid cols-3">
+          <button type="button" class="card card-btn" data-modal="event-konferencii">
+            <h3>Конференции и форумы</h3>
+            <p>Озвучивание зала, видео для докладчиков, связь с удалёнными участниками.</p>
+          </button>
+          <button type="button" class="card card-btn" data-modal="event-korporativy">
+            <h3>Корпоративы</h3>
+            <p>Звук, свет и сцена для праздника: от банкета до сценической программы.</p>
+          </button>
+          <button type="button" class="card card-btn" data-modal="event-koncerty">
+            <h3>Концерты</h3>
+            <p>Профессиональный звук, сценический свет и техсопровождение.</p>
+          </button>
+          <button type="button" class="card card-btn" data-modal="event-chastnye">
+            <h3>Частные праздники</h3>
+            <p>Атмосфера и техника под ваш сценарий: день рождения, свадьба, юбилей.</p>
+          </button>
+          <button type="button" class="card card-btn" data-modal="event-prezentacii">
+            <h3>Презентации</h3>
+            <p>Чёткая речь спикера, вывод материалов на экран, световые акценты.</p>
+          </button>
+          <button type="button" class="card card-btn" data-modal="event-openair">
+            <h3>Open-air</h3>
+            <p>Звук и свет для уличных мероприятий с учётом погоды и локации.</p>
+          </button>
+          <button type="button" class="card card-btn" data-modal="event-online">
+            <h3>Онлайн / гибрид</h3>
+            <p>Прямые эфиры и гибридные форматы: стабильный сигнал, качественная картинка и звук.</p>
+          </button>
+        </div>
+        <p style="margin: 20px 0 24px; color: var(--muted); font-size: 15px;">И другие форматы — по индивидуальному запросу.</p>
+        <button type="button" class="wf-btn primary" data-modal="zadacha">Обсудить задачу</button>
+      </div>
+    </section>
+
+    <!-- 3) Готовые решения -->
+    <section class="screen-section">
+      <div class="container">
+        <h2>Готовые решения</h2>
+        <div class="grid cols-3 ready-cards">
+          <button type="button" class="card card-btn" data-modal="ready-50">
+            <div class="placeholder ph-card" style="margin-bottom: 12px;">Фото</div>
+            <h3>До 50 участников</h3>
+            <p>Базовое техобеспечение для компактных мероприятий.</p>
+          </button>
+          <button type="button" class="card card-btn" data-modal="ready-100-300">
+            <div class="placeholder ph-card" style="margin-bottom: 12px;">Фото</div>
+            <h3>100–300 участников</h3>
+            <p>Универсальный пакет для корпоративов и деловых событий.</p>
+          </button>
+          <button type="button" class="card card-btn" data-modal="ready-300">
+            <div class="placeholder ph-card" style="margin-bottom: 12px;">Фото</div>
+            <h3>300+ участников</h3>
+            <p>Комплекс для больших площадок и насыщенной программы.</p>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4) Портфолио по форматам -->
+    <section class="screen-section">
+      <div class="container">
+        <h2>Портфолио по форматам</h2>
+        <div class="tabs">
+          <button type="button" class="active">Конференции</button>
+          <button type="button">Концерты</button>
+          <button type="button">Корпоративы</button>
+          <button type="button">Open-air</button>
+          <button type="button">Онлайн</button>
+        </div>
+        <div class="grid cols-3">
+          <a class="card" href="/portfolio/kejsy/primer-kejsa/">
+            <div class="placeholder ph-card" style="margin-bottom: 12px;">Фото</div>
+            <h3>Кейс</h3>
+          </a>
+          <a class="card" href="/portfolio/kejsy/primer-kejsa/">
+            <div class="placeholder ph-card" style="margin-bottom: 12px;">Фото</div>
+            <h3>Кейс</h3>
+          </a>
+          <a class="card" href="/portfolio/kejsy/primer-kejsa/">
+            <div class="placeholder ph-card" style="margin-bottom: 12px;">Фото</div>
+            <h3>Кейс</h3>
+          </a>
+        </div>
+        <p style="margin-top: 24px;"><a href="/portfolio/" class="wf-btn">Смотреть все кейсы</a></p>
+      </div>
+    </section>
+
+    <!-- 5) Контакты -->
+    <section class="contacts-block" id="contacts">
+      <div class="container">
+        <h2>Контакты</h2>
+        <div class="grid cols-2 contacts-grid">
+          <div class="form-side">
+            <p class="contact-phone"><a href="tel:+79062027217">8 (906) 202-72-17</a></p>
+            <div class="contacts-form-box">
+              <h3 class="contacts-form-title">Оставить заявку на обратный звонок</h3>
+              <form class="wf-form wf-form-no-labels" action="#" method="post">
+                <input type="text" name="name" placeholder="Имя" />
+                <input type="tel" name="phone" placeholder="Телефон" />
+                <textarea name="message" placeholder="Комментарий"></textarea>
+                <div class="form-checkbox">
+                  <input type="checkbox" id="mer-agree" name="agree" required />
+                  <label for="mer-agree">Я соглашаюсь с <a href="/politika-konfidencialnosti/">политикой конфиденциальности</a> и принимаю условия <a href="/polzovatelskoe-soglashenie/">пользовательского соглашения</a></label>
+                </div>
+                <button type="submit" class="wf-btn primary">Отправить</button>
+              </form>
+            </div>
+            <div class="contacts-vk-box">
+              <p class="contacts-vk-label">Следите за нашими новостями</p>
+              <a href="https://vk.com/tekhnikaevent" target="_blank" rel="noopener" class="wf-btn">Вконтакте</a>
+            </div>
+          </div>
+          <div class="contact-side">
+            <div class="placeholder contacts-map">Фото</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>
+        <a class="brand" href="/">Техника событий</a>
+      </div>
+      <nav class="footer-nav">
+        <a href="/">Главная</a>
+        <a href="/uslugi/">Услуги</a>
+        <a href="/portfolio/">Портфолио</a>
+        <a href="/o-kompanii/">О нас</a>
+        <a href="/kontakty/">Контакты</a>
+      </nav>
+      <div class="footer-legal" style="width: 100%;">
+        <a href="/politika-konfidencialnosti/">Политика конфиденциальности</a>
+        <span style="margin: 0 8px;">·</span>
+        <a href="/politika-konfidencialnosti/#soglasie">Согласие на обработку персональных данных</a>
+        <span style="margin: 0 8px;">·</span>
+        <a href="#" data-modal="requisites">Реквизиты</a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="modal-requisites" class="modal-overlay" aria-hidden="true">
+    <div class="modal-box modal-content-box" style="position: relative;">
+      <button type="button" class="modal-close" aria-label="Закрыть" data-close-modal>&times;</button>
+      <h3>Реквизиты</h3>
+      <p class="modal-subtitle">Описание</p>
+    </div>
+  </div>
+  <div id="modal-zadacha" class="modal-overlay" aria-hidden="true">
+    <div class="modal-box modal-form-box" style="position: relative;">
+      <button type="button" class="modal-close" aria-label="Закрыть" data-close-modal>&times;</button>
+      <h3>Обсудим вашу задачу</h3>
+      <form class="wf-form wf-form-no-labels">
+        <input type="text" name="name" placeholder="Имя" />
+        <input type="tel" name="phone" placeholder="Телефон" />
+        <input type="text" name="city" placeholder="Город" />
+        <textarea name="message" placeholder="Комментарий"></textarea>
+        <div class="form-checkbox">
+          <input type="checkbox" id="zadacha-mer-agree" name="agree" required />
+          <label for="zadacha-mer-agree">Я соглашаюсь с <a href="/politika-konfidencialnosti/">политикой конфиденциальности</a> и принимаю условия <a href="/polzovatelskoe-soglashenie/">пользовательского соглашения</a></label>
+        </div>
+        <button type="submit" class="wf-btn primary">Отправить</button>
+        <p class="modal-footnote">Работаем по договору. Состав оборудования зависит от площадки и сценария.</p>
+      </form>
+    </div>
+  </div>
+  <div id="modal-event-konferencii" class="modal-overlay" aria-hidden="true">
+    <div class="modal-box modal-content-box" style="position: relative;">
+      <button type="button" class="modal-close" aria-label="Закрыть" data-close-modal>&times;</button>
+      <h3>Конференции и форумы</h3>
+      <p>Организуем техническую часть конференций: звук в зале, видео, связь с удалёнными участниками и сопровождение по регламенту.</p>
+      <p><strong>Что можем сделать:</strong></p>
+      <ul class="modal-list">
+        <li>Озвучивание зала и микрофоны для спикеров</li>
+        <li>Видео/экраны для презентаций и трансляции</li>
+        <li>Решения для синхронного перевода (по запросу)</li>
+        <li>Подключение удалённых участников и стабильная связь</li>
+        <li>Оснащение переговорных для онлайн-встреч</li>
+        <li>Технический контроль во время сессий</li>
+      </ul>
+      <button type="button" class="wf-btn primary" data-modal="zadacha">Обсудить задачу</button>
+    </div>
+  </div>
+  <div id="modal-event-korporativy" class="modal-overlay" aria-hidden="true">
+    <div class="modal-box modal-content-box" style="position: relative;">
+      <button type="button" class="modal-close" aria-label="Закрыть" data-close-modal>&times;</button>
+      <h3>Корпоративы</h3>
+      <p>Обеспечиваем корпоративные мероприятия: звук для зала и сцены, световые сценарии, видео и сопровождение по программе.</p>
+      <p><strong>Что можем сделать:</strong></p>
+      <ul class="modal-list">
+        <li>Звук для банкета, награждений и выступлений</li>
+        <li>Сценическое освещение и световые акценты</li>
+        <li>Видео и LED для показа контента</li>
+        <li>Микрофоны для ведущих и спикеров</li>
+        <li>Монтаж и техсопровождение на площадке</li>
+        <li>Подбор комплекта под формат и площадку</li>
+      </ul>
+      <button type="button" class="wf-btn primary" data-modal="zadacha">Обсудить задачу</button>
+    </div>
+  </div>
+  <div id="modal-event-koncerty" class="modal-overlay" aria-hidden="true">
+    <div class="modal-box modal-content-box" style="position: relative;">
+      <button type="button" class="modal-close" aria-label="Закрыть" data-close-modal>&times;</button>
+      <h3>Концерты</h3>
+      <p>Обеспечиваем концертный формат под площадку и количество зрителей — звук, свет и техническое сопровождение на площадке.</p>
+      <p><strong>Что можем сделать:</strong></p>
+      <ul class="modal-list">
+        <li>Подбор и аренда профессионального звука</li>
+        <li>Сценическое освещение и световые сцены</li>
+        <li>Мультимедийные эффекты и LED/видео (по задаче)</li>
+        <li>Монтаж, настройка и репетиции</li>
+        <li>Работа звукооператора и оператора света</li>
+        <li>Масштабирование комплекта под площадку</li>
+      </ul>
+      <button type="button" class="wf-btn primary" data-modal="zadacha">Обсудить задачу</button>
+    </div>
+  </div>
+  <div id="modal-event-chastnye" class="modal-overlay" aria-hidden="true">
+    <div class="modal-box modal-content-box" style="position: relative;">
+      <button type="button" class="modal-close" aria-label="Закрыть" data-close-modal>&times;</button>
+      <h3>Частные праздники</h3>
+      <p>Создаём комфортную атмосферу на празднике — качественный звук, свет и эффектные решения без перегруза.</p>
+      <p><strong>Что можем сделать:</strong></p>
+      <ul class="modal-list">
+        <li>Подбор музыкального сопровождения и звука</li>
+        <li>Установка аппаратуры для зала/площадки</li>
+        <li>Световое оформление и акценты</li>
+        <li>LED/лазерные эффекты и интерактив (по запросу)</li>
+        <li>Съёмка и трансляция ключевых моментов</li>
+        <li>Поддержка на площадке во время мероприятия</li>
+      </ul>
+      <button type="button" class="wf-btn primary" data-modal="zadacha">Обсудить задачу</button>
+    </div>
+  </div>
+  <div id="modal-event-prezentacii" class="modal-overlay" aria-hidden="true">
+    <div class="modal-box modal-content-box" style="position: relative;">
+      <button type="button" class="modal-close" aria-label="Закрыть" data-close-modal>&times;</button>
+      <h3>Презентации</h3>
+      <p>Помогаем провести презентацию чётко и эффектно: речь спикера, контент на экранах и световое оформление.</p>
+      <p><strong>Что можем сделать:</strong></p>
+      <ul class="modal-list">
+        <li>Звук для разборчивой речи спикера</li>
+        <li>Видеооборудование для показа материалов</li>
+        <li>Экраны/панели и настройка вывода контента</li>
+        <li>Световые акценты на сцене/зоне выступления</li>
+        <li>Контроль подготовки и техсопровождение</li>
+        <li>Быстрые правки по ходу программы</li>
+      </ul>
+      <button type="button" class="wf-btn primary" data-modal="zadacha">Обсудить задачу</button>
+    </div>
+  </div>
+  <div id="modal-event-openair" class="modal-overlay" aria-hidden="true">
+    <div class="modal-box modal-content-box" style="position: relative;">
+      <button type="button" class="modal-close" aria-label="Закрыть" data-close-modal>&times;</button>
+      <h3>Open-air</h3>
+      <p>Подбираем технику для уличных мероприятий: большой звук, свет и устойчивость системы в сложных условиях.</p>
+      <p><strong>Что можем сделать:</strong></p>
+      <ul class="modal-list">
+        <li>Звуковые системы для открытых пространств</li>
+        <li>Сценическое освещение под формат и тайминг</li>
+        <li>Синхронизация звука и света</li>
+        <li>Контроль электропитания и технических систем</li>
+        <li>Логистика, монтаж и работа на площадке</li>
+        <li>Решения под погоду и особенности локации</li>
+      </ul>
+      <button type="button" class="wf-btn primary" data-modal="zadacha">Обсудить задачу</button>
+    </div>
+  </div>
+  <div id="modal-event-online" class="modal-overlay" aria-hidden="true">
+    <div class="modal-box modal-content-box" style="position: relative;">
+      <button type="button" class="modal-close" aria-label="Закрыть" data-close-modal>&times;</button>
+      <h3>Онлайн / гибрид</h3>
+      <p>Организуем прямые эфиры и гибридные форматы: стабильный сигнал, качественная картинка и звук.</p>
+      <p><strong>Что можем сделать:</strong></p>
+      <ul class="modal-list">
+        <li>Трансляция в высоком разрешении (оборудование и настройка)</li>
+        <li>Стабильное подключение и резервирование связи (по возможности)</li>
+        <li>Просмотр на любых устройствах (адаптивные форматы)</li>
+        <li>Вывод эфира на популярные платформы</li>
+        <li>Контроль качества сигнала во время эфира</li>
+        <li>Запись и сохранение материала (по запросу)</li>
+      </ul>
+      <button type="button" class="wf-btn primary" data-modal="zadacha">Обсудить задачу</button>
+    </div>
+  </div>
+  <div id="modal-ready-50" class="modal-overlay" aria-hidden="true">
+    <div class="modal-box modal-content-box modal-ready-pack" style="position: relative;">
+      <button type="button" class="modal-close" aria-label="Закрыть" data-close-modal>&times;</button>
+      <h3>Пакет «До 50 человек»</h3>
+      <p class="modal-subtitle">Базовое техобеспечение для камерных событий: речь, музыка, фон, простой свет</p>
+      <p class="modal-block-title">Подходит для</p>
+      <p class="modal-block-text">Презентации, лекции, частные праздники, камерные корпоративы, небольшие концерты и сеты</p>
+      <p class="modal-block-title">Что обычно входит</p>
+      <ul class="modal-list">
+        <li>Звук: комплект акустики под зал или улицу, микшер, базовая коммутация</li>
+        <li>Микрофоны: 1–2 радиомикрофона для ведущего или спикера (по сценарию — больше)</li>
+        <li>Свет: базовая заливка и акцентный свет для сцены или зоны выступления</li>
+        <li>Видео (опционально): подключение к экрану/проектору площадки или простая выдача контента</li>
+        <li>Работы: доставка и монтаж по запросу, настройка перед стартом, демонтаж</li>
+      </ul>
+      <p class="modal-block-title">Что уточняем перед расчётом</p>
+      <ul class="modal-list">
+        <li>площадка (зал/улица), размеры, доступ к электрике</li>
+        <li>формат (речь/музыка/смешанный) и сколько микрофонов</li>
+        <li>нужен ли экран, контент или трансляция</li>
+      </ul>
+      <div class="modal-cta-row">
+        <button type="button" class="wf-btn primary" data-modal="zadacha">Запросить смету</button>
+        <button type="button" class="wf-btn" data-modal="zadacha">Обсудить задачу</button>
+      </div>
+    </div>
+  </div>
+  <div id="modal-ready-100-300" class="modal-overlay" aria-hidden="true">
+    <div class="modal-box modal-content-box modal-ready-pack" style="position: relative;">
+      <button type="button" class="modal-close" aria-label="Закрыть" data-close-modal>&times;</button>
+      <h3>Пакет «50–300 человек»</h3>
+      <p class="modal-subtitle">Универсальный комплект для корпоративов и деловых событий: уверенная речь, музыкальная программа, поддержка контента</p>
+      <p class="modal-block-title">Подходит для</p>
+      <p class="modal-block-text">Конференции, корпоративы, церемонии, презентации брендов, open-air среднего масштаба</p>
+      <p class="modal-block-title">Что обычно входит</p>
+      <ul class="modal-list">
+        <li>Звук: комплект под аудиторию и акустику площадки, микшер, процессинг, коммутация</li>
+        <li>Микрофоны: набор под сценарий (ведущий + спикеры/артисты), стойки/петлички по задаче</li>
+        <li>Свет: сценический базовый сет и управление сценами для ключевых моментов</li>
+        <li>Видео: выдача презентаций и роликов, коммутация источников, контроль сигнала</li>
+        <li>LED/экран (опционально): подбор конфигурации и подключение под контент</li>
+        <li>Работы: монтаж и настройка, саундчек/тест контента, сопровождение на площадке по запросу</li>
+      </ul>
+      <p class="modal-block-title">Что уточняем перед расчётом</p>
+      <ul class="modal-list">
+        <li>сколько зон (сцена/зал/фойе), нужна ли дублирующая озвучка</li>
+        <li>сколько источников видео и кто переключает (мы или ваш режиссёр)</li>
+        <li>тайминг монтажа и доступ на площадку</li>
+      </ul>
+      <div class="modal-cta-row">
+        <button type="button" class="wf-btn primary" data-modal="zadacha">Запросить смету</button>
+        <button type="button" class="wf-btn" data-modal="zadacha">Обсудить задачу</button>
+      </div>
+    </div>
+  </div>
+  <div id="modal-ready-300" class="modal-overlay" aria-hidden="true">
+    <div class="modal-box modal-content-box modal-ready-pack" style="position: relative;">
+      <button type="button" class="modal-close" aria-label="Закрыть" data-close-modal>&times;</button>
+      <h3>Пакет «300+ человек»</h3>
+      <p class="modal-subtitle">Комплекс для больших площадок и насыщенной программы: масштабный звук, сценический свет, видео/LED и стабильная работа команды</p>
+      <p class="modal-block-title">Подходит для</p>
+      <p class="modal-block-text">Крупные концерты, фестивали, городские мероприятия, форумы, масштабные корпоративы, open-air</p>
+      <p class="modal-block-title">Что обычно входит</p>
+      <ul class="modal-list">
+        <li>Звук: расчет под большие пространства, усиление под дальние зоны, резервирование ключевых элементов</li>
+        <li>Микрофоны: расширенный комплект под программу, отдельные линии по задаче</li>
+        <li>Свет: сценическое освещение с программированием сцен и управлением по регламенту</li>
+        <li>Видео/LED: конфигурация экранов под точки просмотра, выдача контента/сигнала, техконтроль</li>
+        <li>Трансляция (опционально): эфир или гибридный формат, контроль картинки/звука/сигнала</li>
+        <li>Работы и команда: логистика, монтаж, коммутация, сопровождение на площадке, демонтаж</li>
+      </ul>
+      <p class="modal-block-title">Что уточняем перед расчётом</p>
+      <ul class="modal-list">
+        <li>схема площадки/сцены и требования площадки/организатора</li>
+        <li>программа по таймингу и технический регламент</li>
+        <li>необходимость резервов и условия работы (улица, ветер, температура)</li>
+      </ul>
+      <div class="modal-cta-row">
+        <button type="button" class="wf-btn primary" data-modal="zadacha">Запросить смету</button>
+        <button type="button" class="wf-btn" data-modal="zadacha">Обсудить задачу</button>
+      </div>
+    </div>
+  </div>
+  <div id="modal-callback" class="modal-overlay" aria-hidden="true">
+    <div class="modal-box" style="position: relative;">
+      <button type="button" class="modal-close" aria-label="Закрыть" data-close-modal>&times;</button>
+      <h3>Обратный звонок</h3>
+      <form class="wf-form wf-form-no-labels">
+        <input type="text" name="name" placeholder="Имя" />
+        <input type="tel" name="phone" placeholder="Телефон" />
+        <div class="form-checkbox">
+          <input type="checkbox" id="callback-mer-agree" name="agree" required />
+          <label for="callback-mer-agree">Я соглашаюсь с <a href="/politika-konfidencialnosti/">политикой конфиденциальности</a> и принимаю условия <a href="/polzovatelskoe-soglashenie/">пользовательского соглашения</a></label>
+        </div>
+        <button type="submit" class="wf-btn primary">Отправить</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Аренда звука — Техника событий</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/"><span>Техника</span><span>событий</span></a>
+      <button id="nav-toggle" class="nav-toggle" type="button" aria-label="Меню" aria-expanded="false">Меню</button>
+      <nav id="site-nav" class="site-nav" aria-label="Навигация">
+        <a href="/">Главная</a>
+        <div class="nav-parent">
+          <a href="/uslugi/" class="nav-parent-label">Услуги</a>
+          <div class="nav-dropdown nav-dropdown-simple">
+            <a class="nav-dropdown-item" href="/uslugi/tehnicheskoe-obespechenie/">Техническое обеспечение под ключ</a>
+            <a class="nav-dropdown-item" href="/uslugi/arenda-oborudovaniya/">Аренда оборудования</a>
+            <a class="nav-dropdown-item" href="/gotovye-resheniya/">Готовые решения</a>
+          </div>
+        </div>
+        <a href="/portfolio/">Портфолио</a>
+        <div class="nav-parent">
+          <a href="/o-kompanii/" class="nav-parent-label">О нас</a>
+          <div class="nav-dropdown nav-dropdown-simple">
+            <a class="nav-dropdown-item" href="/o-kompanii/#o-kompanii">О компании</a>
+            <a class="nav-dropdown-item" href="/o-kompanii/#kak-rabotaem">Как мы работаем</a>
+            <a class="nav-dropdown-item" href="/o-kompanii/#tipy-meropriyatiy">Типы мероприятий</a>
+            <a class="nav-dropdown-item" href="/o-kompanii/#geografiya">География работ</a>
+            <a class="nav-dropdown-item" href="/o-kompanii/#otzyvy">Отзывы и рекомендации</a>
+            <a class="nav-dropdown-item" href="/o-kompanii/#faq">Вопросы и ответы</a>
+          </div>
+        </div>
+        <a href="/kontakty/">Контакты</a>
+      </nav>
+      <div class="header-cta">
+        <button type="button" class="btn-call" data-modal="callback">Обратный звонок</button>
+        <a class="header-phone" href="tel:+79062027217">8 (906) 202-72-17</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="wf-hero">
+        <h1>Звук (аренда)</h1>
+        <p>Комплекты под площадку: микрофоны, акустика, пульт — по задаче.</p>
+      </section>
+      <section class="section paper">
+        <div class="section-body">
+          <p><a href="/uslugi/arenda-oborudovaniya/">← Вся аренда оборудования</a></p>
+          <p style="margin-top: 16px;"><button type="button" class="wf-btn primary" data-modal="zadacha">Обсудить запрос</button></p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div><a class="brand" href="/">Техника событий</a></div>
+      <nav class="footer-nav">
+        <a href="/">Главная</a>
+        <a href="/uslugi/">Услуги</a>
+        <a href="/portfolio/">Портфолио</a>
+        <a href="/o-kompanii/">О нас</a>
+        <a href="/kontakty/">Контакты</a>
+      </nav>
+      <div class="footer-legal" style="width: 100%;">
+        <a href="/politika-konfidencialnosti/">Политика конфиденциальности</a>
+        <span style="margin: 0 8px;">·</span>
+        <a href="/politika-konfidencialnosti/#soglasie">Согласие на обработку персональных данных</a>
+        <span style="margin: 0 8px;">·</span>
+        <a href="#" data-modal="requisites">Реквизиты</a>
+      </div>
+    </div>
+  </footer>
+  <div id="modal-requisites" class="modal-overlay" aria-hidden="true">
+    <div class="modal-box modal-content-box" style="position: relative;">
+      <button type="button" class="modal-close" aria-label="Закрыть" data-close-modal>&times;</button>
+      <h3>Реквизиты</h3>
+      <p class="modal-subtitle">Описание</p>
+    </div>
+  </div>
+  <div id="modal-zadacha" class="modal-overlay" aria-hidden="true">
+    <div class="modal-box modal-form-box" style="position: relative;">
+      <button type="button" class="modal-close" aria-label="Закрыть" data-close-modal>&times;</button>
+      <h3>Обсудим вашу задачу</h3>
+      <form class="wf-form wf-form-no-labels">
+        <input type="text" name="name" placeholder="Имя" />
+        <input type="tel" name="phone" placeholder="Телефон" />
+        <input type="text" name="city" placeholder="Город" />
+        <textarea name="message" placeholder="Комментарий"></textarea>
+        <div class="form-checkbox">
+          <input type="checkbox" id="az-zadacha-agree" name="agree" required />
+          <label for="az-zadacha-agree">Я соглашаюсь с <a href="/politika-konfidencialnosti/">политикой конфиденциальности</a> и принимаю условия <a href="/polzovatelskoe-soglashenie/">пользовательского соглашения</a></label>
+        </div>
+        <button type="submit" class="wf-btn primary">Отправить</button>
+        <p class="modal-footnote">Работаем по договору.</p>
+      </form>
+    </div>
+  </div>
+  <div id="modal-callback" class="modal-overlay" aria-hidden="true">
+    <div class="modal-box" style="position: relative;">
+      <button type="button" class="modal-close" aria-label="Закрыть" data-close-modal>&times;</button>
+      <h3>Обратный звонок</h3>
+      <form class="wf-form wf-form-no-labels">
+        <input type="text" name="name" placeholder="Имя" />
+        <input type="tel" name="phone" placeholder="Телефон" />
+        <div class="form-checkbox">
+          <input type="checkbox" id="az-cb-agree" name="agree" required />
+          <label for="az-cb-agree">Я соглашаюсь с <a href="/politika-konfidencialnosti/">политикой конфиденциальности</a> и принимаю условия <a href="/polzovatelskoe-soglashenie/">пользовательского соглашения</a></label>
+        </div>
+        <button type="submit" class="wf-btn primary">Отправить</button>
+      </form>
+    </div>
+  </div>
+  <script src="/app.js"></script>
+</body>
+</html>
