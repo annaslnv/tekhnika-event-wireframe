@@ -1,6 +1,8 @@
 # Выкладка сайта на сервер
 
-Чтобы актуальная версия сайта была доступна по ссылке, загрузите содержимое этой папки на сервер. Подключение по SSH — см. **ИНСТРУКЦИЯ_ПОДКЛЮЧЕНИЕ.md** в корне проекта.
+Чтобы по ссылке (http://88.216.70.147) было видно **то же самое, что на localhost:8080**, нужны оба шага: загрузка файлов и настройка веб-сервера (Nginx). Подключение по SSH — см. **ИНСТРУКЦИЯ_ПОДКЛЮЧЕНИЕ.md** в корне проекта.
+
+**Полный деплой с первого раза:** (1) создать каталог на сервере, (2) rsync — загрузить файлы, (3) скопировать и включить `nginx-tekhnika-event.conf`, перезагрузить nginx. Дальнейшие обновления — только rsync (шаг 2 уже выполнен).
 
 ## 1. Загрузка файлов на сервер
 
@@ -25,14 +27,25 @@ rsync -avz --delete tekhnika-event-wireframe/ server88:/var/www/tekhnika-event/
 ssh -i ~/.ssh/id_rsa_server_88 root@88.216.70.147 "mkdir -p /var/www/tekhnika-event"
 ```
 
-## 2. Настройка веб-сервера на 88.216.70.147
+## 2. Настройка Nginx на 88.216.70.147
 
-Чтобы сайт открывался по домену или по IP:
+В проекте есть готовый конфиг **nginx-tekhnika-event.conf**. Чтобы сайт открывался по IP (как на localhost):
 
-- **Nginx** — в конфиге сайта укажите `root /var/www/tekhnika-event;` и при необходимости `index index.html; try_files $uri $uri/ /index.html;` для удобной работы с путями вроде `/meropriyatiya/`.
-- **Apache** — укажите `DocumentRoot /var/www/tekhnika-event` и включите `AllowOverride All` для `.htaccess`, если будете использовать перезапись URL.
+**Один раз на сервере** (или после смены сервера):
 
-После изменения конфига перезапустите веб-сервер (например, `systemctl reload nginx`).
+```bash
+# Скопировать конфиг на сервер (из папки над tekhnika-event-wireframe):
+scp -i ~/.ssh/id_rsa_server_88 tekhnika-event-wireframe/nginx-tekhnika-event.conf root@88.216.70.147:/etc/nginx/sites-available/tekhnika-event
+
+# Подключиться и включить сайт:
+ssh -i ~/.ssh/id_rsa_server_88 root@88.216.70.147
+ln -sf /etc/nginx/sites-available/tekhnika-event /etc/nginx/sites-enabled/tekhnika-event
+rm -f /etc/nginx/sites-enabled/default
+nginx -t && systemctl reload nginx
+exit
+```
+
+После этого сайт доступен по адресу **http://88.216.70.147** (то же содержимое, что на http://localhost:8080).
 
 ## 3. Обновление (чтобы на сервере всегда была последняя версия)
 

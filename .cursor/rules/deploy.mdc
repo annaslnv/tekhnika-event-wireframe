@@ -1,0 +1,14 @@
+---
+description: Правило деплоя статического сайта на сервер
+globs: 
+alwaysApply: false
+---
+
+# Деплой на сервер (88.216.70.147)
+
+Чтобы по ссылке http://88.216.70.147 было видно то же, что на localhost:8080, деплой делается **с первого раза** так:
+
+1. **Файлы** — rsync содержимого `tekhnika-event-wireframe/` в `root@88.216.70.147:/var/www/tekhnika-event/`.
+2. **Веб-сервер** — Nginx должен отдавать сайт из этой папки. В проекте есть `nginx-tekhnika-event.conf`: скопировать на сервер в `/etc/nginx/sites-available/tekhnika-event`, включить (symlink в sites-enabled), отключить default при необходимости, выполнить `nginx -t && systemctl reload nginx`.
+
+Без шага 2 по IP будет 404. При следующих обновлениях достаточно только rsync (конфиг nginx уже применён).
