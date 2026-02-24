@@ -497,6 +497,19 @@ body { padding-top: var(--header-height); }
 .wf-btn.primary { background: var(--ink); color: var(--paper); border-color: var(--ink); }
 .wf-btn.primary:hover { background: #333; border-color: #333; }
 
+/* Вторичная ссылка без рамки (например «Все направления под ключ») */
+.link-back {
+  display: inline-block;
+  margin-top: 24px;
+  color: var(--muted);
+  font-size: 15px;
+  text-decoration: none;
+  border: none;
+  background: none;
+  padding: 0;
+}
+.link-back:hover { color: var(--ink); text-decoration: underline; }
+
 /* Forms */
 .wf-form { display: grid; gap: 14px; max-width: 400px; }
 .wf-form label { font-size: 13px; color: var(--muted); display: block; margin-bottom: 4px; }
