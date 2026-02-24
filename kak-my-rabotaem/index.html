@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Портфолио — Техника событий</title>
+  <title>Как мы работаем — Техника событий</title>
   <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
@@ -40,49 +40,117 @@
   </header>
 
   <main>
+    <!-- Экран 1 — Hero -->
+    <section class="hero-full">
+      <div class="hero-bg">
+        <div class="placeholder ph-hero">Фото / Видео</div>
+      </div>
+      <div class="container">
+        <h1>Как мы работаем</h1>
+        <p class="hero-sub">Берём техническое обеспечение мероприятия «под ключ»: от первого запроса и сметы — до монтажа, сопровождения на площадке и демонтажа.</p>
+        <ul class="hero-bullets">
+          <li>15+ лет опыта проектов разного масштаба</li>
+          <li>работаем по договору, фиксируем состав в смете</li>
+          <li>базируемся в Великом Новгороде, выезжаем по Северо-Западу и в ЦФО</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Экран 2 — Этапы работы (9 шагов) -->
     <section class="screen-section">
       <div class="container">
-        <h2>Портфолио</h2>
-        <div class="tabs portfolio-filters" role="tablist">
-          <button type="button" class="active" data-filter="all" role="tab">Все</button>
-          <button type="button" data-filter="konferencii" role="tab">Конференции</button>
-          <button type="button" data-filter="korporativy" role="tab">Корпоративы</button>
-          <button type="button" data-filter="koncerty" role="tab">Концерты</button>
-          <button type="button" data-filter="chastnye" role="tab">Частные праздники</button>
-          <button type="button" data-filter="prezentacii" role="tab">Презентации</button>
-          <button type="button" data-filter="openair" role="tab">Open-air</button>
-          <button type="button" data-filter="online" role="tab">Онлайн / гибрид</button>
+        <h2>Этапы работы</h2>
+        <div class="grid cols-3" style="gap: 20px;">
+          <div class="card" style="padding: 24px;">
+            <h3 style="margin: 0 0 8px;">1. Первичный запрос и консультация</h3>
+            <p style="margin: 0; color: var(--muted); line-height: 1.6;">Собираем вводные: формат, площадка, тайминг, цели и ориентир по бюджету.</p>
+          </div>
+          <div class="card" style="padding: 24px;">
+            <h3 style="margin: 0 0 8px;">2. Концепция и сценарная логика</h3>
+            <p style="margin: 0; color: var(--muted); line-height: 1.6;">Уточняем сценарий и ключевые моменты, чтобы техника работала под программу.</p>
+          </div>
+          <div class="card" style="padding: 24px;">
+            <h3 style="margin: 0 0 8px;">3. Техническое проектирование</h3>
+            <p style="margin: 0; color: var(--muted); line-height: 1.6;">Прорабатываем схему площадки, расчёт звука/света/видео и размещение оборудования.</p>
+          </div>
+          <div class="card" style="padding: 24px;">
+            <h3 style="margin: 0 0 8px;">4. Визуализация и 3D-макет (по запросу)</h3>
+            <p style="margin: 0; color: var(--muted); line-height: 1.6;">Показываем, как будет выглядеть сцена, свет, звук и видео в вашей конфигурации.</p>
+          </div>
+          <div class="card" style="padding: 24px;">
+            <h3 style="margin: 0 0 8px;">5. Смета и договор</h3>
+            <p style="margin: 0; color: var(--muted); line-height: 1.6;">Фиксируем состав работ, оборудование и ответственность сторон.</p>
+          </div>
+          <div class="card" style="padding: 24px;">
+            <h3 style="margin: 0 0 8px;">6. Логистика и подготовка</h3>
+            <p style="margin: 0; color: var(--muted); line-height: 1.6;">Планируем доставку/вывоз, доступ на площадку, тайминг монтажа.</p>
+          </div>
+          <div class="card" style="padding: 24px;">
+            <h3 style="margin: 0 0 8px;">7. Монтаж, настройка и тест</h3>
+            <p style="margin: 0; color: var(--muted); line-height: 1.6;">Ставим оборудование, подключаем, проводим проверку и прогон перед стартом.</p>
+          </div>
+          <div class="card" style="padding: 24px;">
+            <h3 style="margin: 0 0 8px;">8. Сопровождение мероприятия</h3>
+            <p style="margin: 0; color: var(--muted); line-height: 1.6;">Контроль по регламенту, оперативные решения по ходу события.</p>
+          </div>
+          <div class="card" style="padding: 24px;">
+            <h3 style="margin: 0 0 8px;">9. Демонтаж и завершение</h3>
+            <p style="margin: 0; color: var(--muted); line-height: 1.6;">Аккуратно сворачиваем технику, вывозим, приводим площадку в порядок.</p>
+          </div>
         </div>
-        <div class="portfolio-cards-filterable">
-          <button type="button" class="card case-card card-btn" data-modal="case" data-category="konferencii">
+      </div>
+    </section>
+
+    <!-- Экран 3 — Что вы получаете на выходе -->
+    <section class="screen-section">
+      <div class="container">
+        <h2>Что получаете в процессе</h2>
+        <ul style="padding-left: 20px; line-height: 2; color: var(--muted);">
+          <li>понятную смету и согласованный состав работ</li>
+          <li>схему площадки и техрешение под формат</li>
+          <li>подготовленную технику, проверенную до старта</li>
+          <li>команду на площадке и контроль качества</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Экран 4 — Что нужно от вас -->
+    <section class="screen-section">
+      <div class="container">
+        <h2>Что нужно от вас</h2>
+        <ul style="padding-left: 20px; line-height: 2; color: var(--muted);">
+          <li>формат мероприятия и примерный тайминг</li>
+          <li>площадка: адрес, фото/план/размеры</li>
+          <li>программа: спикеры/выступления/контент</li>
+          <li>требования площадки (электрика, доступ, ограничения)</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Портфолио — примеры кейсов -->
+    <section class="screen-section portfolio-row">
+      <div class="container">
+        <h2>Портфолио</h2>
+        <p style="margin: 0 0 24px; color: var(--muted);">Примеры наших работ</p>
+        <div class="grid portfolio-cards" style="gap: 24px;">
+          <button type="button" class="card case-card card-btn" data-modal="case">
             <div class="case-card__media"><span class="case-card__placeholder">Фото</span></div>
             <div class="case-card__content"><h3>Кейс 1</h3></div>
           </button>
-          <button type="button" class="card case-card card-btn" data-modal="case" data-category="korporativy">
+          <button type="button" class="card case-card card-btn" data-modal="case">
             <div class="case-card__media"><span class="case-card__placeholder">Фото</span></div>
             <div class="case-card__content"><h3>Кейс 2</h3></div>
           </button>
-          <button type="button" class="card case-card card-btn" data-modal="case" data-category="koncerty">
+          <button type="button" class="card case-card card-btn" data-modal="case">
             <div class="case-card__media"><span class="case-card__placeholder">Фото</span></div>
             <div class="case-card__content"><h3>Кейс 3</h3></div>
           </button>
-          <button type="button" class="card case-card card-btn" data-modal="case" data-category="chastnye">
+          <button type="button" class="card case-card card-btn" data-modal="case">
             <div class="case-card__media"><span class="case-card__placeholder">Фото</span></div>
             <div class="case-card__content"><h3>Кейс 4</h3></div>
           </button>
-          <button type="button" class="card case-card card-btn" data-modal="case" data-category="prezentacii">
-            <div class="case-card__media"><span class="case-card__placeholder">Фото</span></div>
-            <div class="case-card__content"><h3>Кейс 5</h3></div>
-          </button>
-          <button type="button" class="card case-card card-btn" data-modal="case" data-category="openair">
-            <div class="case-card__media"><span class="case-card__placeholder">Фото</span></div>
-            <div class="case-card__content"><h3>Кейс 6</h3></div>
-          </button>
-          <button type="button" class="card case-card card-btn" data-modal="case" data-category="online">
-            <div class="case-card__media"><span class="case-card__placeholder">Фото</span></div>
-            <div class="case-card__content"><h3>Кейс 7</h3></div>
-          </button>
         </div>
+        <p class="portfolio-cta" style="margin-top: 24px;"><a href="/portfolio/" class="wf-btn">Смотреть все</a></p>
       </div>
     </section>
 
@@ -111,8 +179,8 @@
                 <input type="tel" name="phone" placeholder="Телефон" />
                 <textarea name="message" placeholder="Комментарий"></textarea>
                 <div class="form-checkbox">
-                  <input type="checkbox" id="pf-agree" name="agree" required />
-                  <label for="pf-agree">Я соглашаюсь с <a href="/privacy-policy/" target="_blank" rel="noopener noreferrer">политикой конфиденциальности</a> и принимаю условия <a href="/soglasie-na-obrabotku/" target="_blank" rel="noopener noreferrer">пользовательского соглашения</a></label>
+                  <input type="checkbox" id="kmr-agree" name="agree" required />
+                  <label for="kmr-agree">Я соглашаюсь с <a href="/privacy-policy/" target="_blank" rel="noopener noreferrer">политикой конфиденциальности</a> и принимаю условия <a href="/soglasie-na-obrabotku/" target="_blank" rel="noopener noreferrer">пользовательского соглашения</a></label>
                 </div>
                 <button type="submit" class="wf-btn primary">Отправить</button>
               </form>
@@ -177,6 +245,19 @@
       <button type="button" class="modal-close" aria-label="Закрыть" data-close-modal>&times;</button>
       <h3>Реквизиты</h3>
       <p class="modal-subtitle">Описание</p>
+    </div>
+  </div>
+  <div id="modal-zadacha" class="modal-overlay" aria-hidden="true">
+    <div class="modal-box modal-form-box" style="position: relative;">
+      <button type="button" class="modal-close" aria-label="Закрыть" data-close-modal>&times;</button>
+      <h3>Обсудить задачу</h3>
+      <p class="modal-subtitle">Опишите задачу — мы свяжемся с вами.</p>
+      <form class="wf-form wf-form-no-labels">
+        <input type="text" name="name" placeholder="Имя" />
+        <input type="tel" name="phone" placeholder="Телефон" />
+        <textarea name="message" placeholder="Формат, площадка, дата"></textarea>
+        <button type="submit" class="wf-btn primary">Отправить</button>
+      </form>
     </div>
   </div>
   <div id="modal-callback" class="modal-overlay" aria-hidden="true">

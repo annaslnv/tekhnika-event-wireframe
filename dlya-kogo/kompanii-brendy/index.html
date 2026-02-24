@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Контакты — Техника событий</title>
+  <title>Техобеспечение для компаний и брендов — Техника событий</title>
   <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
@@ -17,8 +17,8 @@
           <a href="/uslugi/" class="nav-parent-label">Услуги</a>
           <div class="nav-dropdown nav-dropdown-simple">
             <a class="nav-dropdown-item" href="/uslugi/tehnicheskoe-obespechenie/">Техническое обеспечение под ключ</a>
-            <a class="nav-dropdown-item" href="/onlajn-translyacii/">Организация онлайн-трансляций</a>
             <a class="nav-dropdown-item" href="/uslugi/arenda-oborudovaniya/">Аренда оборудования</a>
+            <a class="nav-dropdown-item" href="/onlajn-translyacii/">Онлайн-трансляции</a>
           </div>
         </div>
         <a href="/portfolio/">Портфолио</a>
@@ -40,6 +40,62 @@
   </header>
 
   <main>
+    <section class="hero-full">
+      <div class="hero-bg">
+        <div class="placeholder ph-hero">Фото / Видео</div>
+      </div>
+      <div class="container">
+        <h1>Технический продакшн для компаний</h1>
+        <p class="hero-sub">Корпоративы, презентации, дилерские мероприятия, HR-события. Понятная смета, один подрядчик и контроль качества на площадке.</p>
+        <ul class="hero-bullets">
+          <li>Понятное предложение и 3D-макет — согласуете без бесконечных правок</li>
+          <li>Ответственные на площадке за оперативные решения</li>
+          <li>Работа по договору, фиксируем состав и сроки</li>
+        </ul>
+        <div class="hero-cta">
+          <button type="button" class="wf-btn primary" data-modal="zadacha">Обсудить задачу</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen-section">
+      <div class="container">
+        <h2>Почему к нам обращаются компании</h2>
+        <p style="margin: 0 0 24px; color: var(--muted); line-height: 1.6; max-width: 720px;">Нужен результат в срок: прозрачная смета, визуализация до старта и команда, которая не подведёт в день мероприятия.</p>
+        <div class="grid cols-2" style="gap: 20px;">
+          <div class="card" style="padding: 24px;">
+            <h3 style="margin: 0 0 8px;">Понятная смета и 3D-макет</h3>
+            <p style="margin: 0; color: var(--muted); line-height: 1.6;">Согласуете состав и расстановку до подписания договора. Меньше правок и недопонимания на площадке.</p>
+          </div>
+          <div class="card" style="padding: 24px;">
+            <h3 style="margin: 0 0 8px;">Ответственные «на месте»</h3>
+            <p style="margin: 0; color: var(--muted); line-height: 1.6;">На площадке — специалисты, которые решают вопросы по ходу события. Не нужно искать контакты в последний момент.</p>
+          </div>
+          <div class="card" style="padding: 24px;">
+            <h3 style="margin: 0 0 8px;">Юридически чисто</h3>
+            <p style="margin: 0; color: var(--muted); line-height: 1.6;">Договор, акты, закрытие этапов. Выстраиваем процесс так, чтобы бухгалтерия и юристы были спокойны.</p>
+          </div>
+          <div class="card" style="padding: 24px;">
+            <h3 style="margin: 0 0 8px;">Логистика и тайминг</h3>
+            <p style="margin: 0; color: var(--muted); line-height: 1.6;">Чёткий план монтажа и демонтажа. Техническая часть события закрыта без рисков и сорванных сроков.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen-section">
+      <div class="container">
+        <h2>Что делаем для вас</h2>
+        <ul style="margin: 0; padding-left: 20px; color: var(--muted); line-height: 1.8;">
+          <li>Техобеспечение под ключ: от сметы и ТЗ до монтажа и сопровождения</li>
+          <li>Презентации и конференции: звук, свет, видео, экраны, при необходимости — трансляция</li>
+          <li>Корпоративы и деловые события: подбор комплекта под формат и бюджет</li>
+          <li>Онлайн-трансляции и гибридные форматы для удалённых участников</li>
+        </ul>
+        <p style="margin: 24px 0 0;"><button type="button" class="wf-btn primary" data-modal="zadacha">Обсудить задачу</button></p>
+      </div>
+    </section>
+
     <section class="contacts-block" id="contacts">
       <div class="container">
         <h2>Контакты</h2>
@@ -65,8 +121,8 @@
                 <input type="tel" name="phone" placeholder="Телефон" />
                 <textarea name="message" placeholder="Комментарий"></textarea>
                 <div class="form-checkbox">
-                  <input type="checkbox" id="kontakty-agree" name="agree" required />
-                  <label for="kontakty-agree">Я соглашаюсь с <a href="/privacy-policy/" target="_blank" rel="noopener noreferrer">политикой конфиденциальности</a> и принимаю условия <a href="/soglasie-na-obrabotku/" target="_blank" rel="noopener noreferrer">пользовательского соглашения</a></label>
+                  <input type="checkbox" id="kb-contacts-agree" name="agree" required />
+                  <label for="kb-contacts-agree">Я соглашаюсь с <a href="/privacy-policy/" target="_blank" rel="noopener noreferrer">политикой конфиденциальности</a> и принимаю условия <a href="/soglasie-na-obrabotku/" target="_blank" rel="noopener noreferrer">пользовательского соглашения</a></label>
                 </div>
                 <button type="submit" class="wf-btn primary">Отправить</button>
               </form>
@@ -117,6 +173,23 @@
       <p class="modal-subtitle">Описание</p>
     </div>
   </div>
+  <div id="modal-zadacha" class="modal-overlay" aria-hidden="true">
+    <div class="modal-box modal-form-box" style="position: relative;">
+      <button type="button" class="modal-close" aria-label="Закрыть" data-close-modal>&times;</button>
+      <h3>Обсудим вашу задачу</h3>
+      <form class="wf-form wf-form-no-labels">
+        <input type="text" name="name" placeholder="Имя" />
+        <input type="tel" name="phone" placeholder="Телефон" />
+        <input type="text" name="company" placeholder="Компания" />
+        <textarea name="message" placeholder="Комментарий"></textarea>
+        <div class="form-checkbox">
+          <input type="checkbox" id="kb-zadacha-agree" name="agree" required />
+          <label for="kb-zadacha-agree">Я соглашаюсь с <a href="/privacy-policy/" target="_blank" rel="noopener noreferrer">политикой конфиденциальности</a> и принимаю условия <a href="/soglasie-na-obrabotku/" target="_blank" rel="noopener noreferrer">пользовательского соглашения</a></label>
+        </div>
+        <button type="submit" class="wf-btn primary">Отправить</button>
+      </form>
+    </div>
+  </div>
   <div id="modal-callback" class="modal-overlay" aria-hidden="true">
     <div class="modal-box" style="position: relative;">
       <button type="button" class="modal-close" aria-label="Закрыть" data-close-modal>&times;</button>
@@ -125,8 +198,8 @@
         <input type="text" name="name" placeholder="Имя" />
         <input type="tel" name="phone" placeholder="Телефон" />
         <div class="form-checkbox">
-          <input type="checkbox" id="kontakty-cb-agree" name="agree" required />
-          <label for="kontakty-cb-agree">Я соглашаюсь с <a href="/privacy-policy/" target="_blank" rel="noopener noreferrer">политикой конфиденциальности</a> и принимаю условия <a href="/soglasie-na-obrabotku/" target="_blank" rel="noopener noreferrer">пользовательского соглашения</a></label>
+          <input type="checkbox" id="kb-cb-agree" name="agree" required />
+          <label for="kb-cb-agree">Я соглашаюсь с <a href="/privacy-policy/" target="_blank" rel="noopener noreferrer">политикой конфиденциальности</a> и принимаю условия <a href="/soglasie-na-obrabotku/" target="_blank" rel="noopener noreferrer">пользовательского соглашения</a></label>
         </div>
         <button type="submit" class="wf-btn primary">Отправить</button>
       </form>

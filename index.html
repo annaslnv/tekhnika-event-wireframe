@@ -18,20 +18,17 @@
           <a href="/uslugi/" class="nav-parent-label">Услуги</a>
           <div class="nav-dropdown nav-dropdown-simple">
             <a class="nav-dropdown-item" href="/uslugi/tehnicheskoe-obespechenie/">Техническое обеспечение под ключ</a>
+            <a class="nav-dropdown-item" href="/onlajn-translyacii/">Организация онлайн-трансляций</a>
             <a class="nav-dropdown-item" href="/uslugi/arenda-oborudovaniya/">Аренда оборудования</a>
-            <a class="nav-dropdown-item" href="/gotovye-resheniya/">Готовые решения</a>
           </div>
         </div>
         <a href="/portfolio/">Портфолио</a>
         <div class="nav-parent">
-          <a href="/o-kompanii/" class="nav-parent-label">О нас</a>
+          <span class="nav-parent-label">О нас</span>
           <div class="nav-dropdown nav-dropdown-simple">
-            <a class="nav-dropdown-item" href="/o-kompanii/#o-kompanii">О компании</a>
-            <a class="nav-dropdown-item" href="/o-kompanii/#kak-rabotaem">Как мы работаем</a>
-            <a class="nav-dropdown-item" href="/o-kompanii/#tipy-meropriyatiy">Типы мероприятий</a>
-            <a class="nav-dropdown-item" href="/o-kompanii/#geografiya">География работ</a>
-            <a class="nav-dropdown-item" href="/o-kompanii/#otzyvy">Отзывы и рекомендации</a>
-            <a class="nav-dropdown-item" href="/o-kompanii/#faq">Вопросы и ответы</a>
+            <a class="nav-dropdown-item" href="/o-kompanii/">О компании</a>
+            <a class="nav-dropdown-item" href="/kak-my-rabotaem/">Как мы работаем</a>
+            <a class="nav-dropdown-item" href="/meropriyatiya/">Типы мероприятий</a>
           </div>
         </div>
         <a href="/kontakty/">Контакты</a>
@@ -56,7 +53,7 @@
           <li>Работаем по договору</li>
           <li>Подберём оптимальный комплект под формат и площадку</li>
           <li>3D-макет сцены/света/звука — по запросу</li>
-          <li>Выезжаем на место: СЗФО/ЦФО, Москва, СПб и области</li>
+          <li>Выезжаем на место: СЗФО/ЦФО, Москва, СПб</li>
         </ul>
         <div class="hero-cta">
           <button type="button" class="wf-btn primary" data-modal="smeta">Рассчитать смету</button>
@@ -68,12 +65,20 @@
     <section class="screen-section">
       <div class="container">
         <h2>Что мы предлагаем</h2>
-        <div class="directions-top grid cols-2">
+        <div class="directions-top grid cols-3">
           <a class="card card-with-photo-top" href="/uslugi/tehnicheskoe-obespechenie/">
             <div class="placeholder card-photo">Фото</div>
             <div class="card-body">
-              <h3>Под ключ</h3>
+              <h3>Продакшн под ключ</h3>
               <p>Проектирование → логистика → монтаж оборудования → сопровождение → демонтаж</p>
+              <span class="card-link">Подробнее →</span>
+            </div>
+          </a>
+          <a class="card card-with-photo-top" href="/onlajn-translyacii/">
+            <div class="placeholder card-photo">Фото</div>
+            <div class="card-body">
+              <h3>Организация онлайн-трансляций</h3>
+              <p>Настройка и сопровождение эфира. Звук, картинка, сигнал – все под нашим контролем</p>
               <span class="card-link">Подробнее →</span>
             </div>
           </a>
@@ -86,87 +91,74 @@
             </div>
           </a>
         </div>
-        <div class="directions-bottom">
-          <a class="card card-with-photo-top" href="/gotovye-resheniya/">
-            <div class="placeholder card-photo">Фото</div>
-            <div class="card-body">
-              <h3>Готовые решения</h3>
-              <p>Пакеты под размер аудитории. До 50, 100–300 и 300+ участников.</p>
-              <span class="card-link">Подробнее →</span>
-            </div>
+      </div>
+    </section>
+
+    <!-- 3) Помогаем сосредоточиться на главном -->
+    <section class="screen-section" id="tipy-meropriyatiy">
+      <div class="container">
+        <h2>Помогаем сосредоточиться на главном</h2>
+        <p class="hero-sub" style="margin: 0 0 24px;">— создании интересного и запоминающегося мероприятия</p>
+        <div class="grid cols-3 event-cards-js" style="margin-bottom: 24px;">
+          <button type="button" class="card card-event card-btn" data-modal="event-koncerty"><div class="card-event-photo placeholder">Фото</div><h3>Концерты</h3></button>
+          <button type="button" class="card card-event card-btn" data-modal="event-prezentacii"><div class="card-event-photo placeholder">Фото</div><h3>Презентации</h3></button>
+          <button type="button" class="card card-event card-btn" data-modal="event-konferencii"><div class="card-event-photo placeholder">Фото</div><h3>Конференции</h3></button>
+        </div>
+        <div class="grid cols-3" style="gap: 24px; align-items: start;">
+          <button type="button" class="card card-event card-btn" data-modal="event-openair"><div class="card-event-photo placeholder">Фото</div><h3>Open-air</h3></button>
+          <div style="padding: 20px; background: var(--card-bg, #f5f5f5); border-radius: var(--radius, 8px);">
+            <p style="margin: 0 0 16px; color: var(--muted); line-height: 1.6;">Также работаем с форматами по индивидуальному запросу.</p>
+            <button type="button" class="wf-btn primary" data-modal="zadacha">Обсудить задачу</button>
+          </div>
+          <button type="button" class="card card-event card-btn" data-modal="event-chastnye"><div class="card-event-photo placeholder">Фото</div><h3>Частные праздники</h3></button>
+        </div>
+        <h2 style="margin-top: 48px; margin-bottom: 20px;">Для кого подбираем техрешения</h2>
+        <div class="grid cols-2" style="gap: 24px;">
+          <a class="card" href="/dlya-kogo/gosuchrezhdeniya/" style="padding: 24px; text-decoration: none; color: inherit; display: block;">
+            <h3 style="margin: 0 0 8px;">Государственные и муниципальные площадки</h3>
+            <p style="margin: 0; color: var(--muted); line-height: 1.6;">Официальные и городские мероприятия: работаем по регламентам, документам и срокам.</p>
+            <span class="card-link" style="margin-top: 12px; display: inline-block;">Подробнее →</span>
+          </a>
+          <a class="card" href="/dlya-kogo/kompanii-brendy/" style="padding: 24px; text-decoration: none; color: inherit; display: block;">
+            <h3 style="margin: 0 0 8px;">Компании и бренды</h3>
+            <p style="margin: 0; color: var(--muted); line-height: 1.6;">Корпоративы и презентации: решаем задачи бренда, составляем чёткую смету и план работ.</p>
+            <span class="card-link" style="margin-top: 12px; display: inline-block;">Подробнее →</span>
+          </a>
+          <a class="card" href="/dlya-kogo/chastnye-zakazchiki/" style="padding: 24px; text-decoration: none; color: inherit; display: block;">
+            <h3 style="margin: 0 0 8px;">Частные заказчики</h3>
+            <p style="margin: 0; color: var(--muted); line-height: 1.6;">Свадьбы и семейные события: обеспечиваем чистый звук, высокое качество видео и световых решений, ничего лишнего, по бюджету и без суеты.</p>
+            <span class="card-link" style="margin-top: 12px; display: inline-block;">Подробнее →</span>
+          </a>
+          <a class="card" href="/dlya-kogo/event-agentstva/" style="padding: 24px; text-decoration: none; color: inherit; display: block;">
+            <h3 style="margin: 0 0 8px;">Event-агентства и организаторы</h3>
+            <p style="margin: 0; color: var(--muted); line-height: 1.6;">Встраиваемся в команду проекта: действуем по ТЗ, соблюдаем тайминг, быстро реагируем на площадке.</p>
+            <span class="card-link" style="margin-top: 12px; display: inline-block;">Подробнее →</span>
           </a>
         </div>
       </div>
     </section>
 
-    <!-- 3) Мероприятия, с которыми работаем -->
-    <section class="screen-section">
-      <div class="container">
-        <h2>Мероприятия, с которыми работаем</h2>
-        <div class="grid cols-3 event-cards-js">
-          <button type="button" class="card card-event card-btn" data-modal="event-koncerty"><div class="card-event-photo placeholder">Фото</div><h3>Концерты</h3></button>
-          <button type="button" class="card card-event card-btn" data-modal="event-chastnye"><div class="card-event-photo placeholder">Фото</div><h3>Частные праздники</h3></button>
-          <button type="button" class="card card-event card-btn" data-modal="event-prezentacii"><div class="card-event-photo placeholder">Фото</div><h3>Презентации</h3></button>
-          <button type="button" class="card card-event card-btn" data-modal="event-konferencii"><div class="card-event-photo placeholder">Фото</div><h3>Конференции</h3></button>
-          <button type="button" class="card card-event card-btn" data-modal="event-openair"><div class="card-event-photo placeholder">Фото</div><h3>Open-air</h3></button>
-          <button type="button" class="card card-event card-btn" data-modal="event-online"><div class="card-event-photo placeholder">Фото</div><h3>Онлайн-трансляции</h3></button>
-        </div>
-        <p style="margin: 20px 0 24px; color: var(--muted); font-size: 15px;">А также мероприятия по индивидуальному запросу.</p>
-        <button type="button" class="wf-btn primary" data-modal="consult">Получить консультацию</button>
-      </div>
-    </section>
-
-    <!-- 5) Помогаем выбрать оптимальный комплект -->
-    <section class="screen-section komplekt-block">
-      <div class="container">
-        <h2>Помогаем выбрать оптимальный комплект</h2>
-        <div class="grid cols-2" style="gap: 40px;">
-          <div class="komplekt-photo"><div class="placeholder ph-16x9">Фото</div></div>
-          <div>
-            <p style="margin: 0 0 16px;">Мы задаём несколько вопросов про формат, сцену, тайминг и количество участников — и предлагаем состав оборудования без лишних позиций.</p>
-            <ul style="margin: 0 0 24px; padding-left: 20px; color: var(--muted); line-height: 1.8;">
-              <li>учитываем площадку и электрику</li>
-              <li>подбираем микрофоны / акустические зоны / световые сценарии</li>
-              <li>согласуем смету и ТЗ до выезда</li>
-              <li>можем не только предоставить оборудование, но и обеспечить его работу от начала и до конца события</li>
-            </ul>
-            <button type="button" class="wf-btn primary" data-modal="komplekt">Рассчитать комплект под задачу</button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 6) 3D-макеты по запросу -->
-    <section class="screen-section">
-      <div class="container">
-        <h2>3D-макеты по запросу</h2>
-        <div class="grid cols-2" style="align-items: start; gap: 40px;">
-          <div>
-            <p style="margin: 0 0 16px;">Покажем, как будет выглядеть сцена, свет и звук ещё до монтажа. Так проще согласовать решение с заказчиком и площадкой.</p>
-            <ul style="margin: 0 0 24px; padding-left: 20px; color: var(--muted); line-height: 1.8;">
-              <li>Визуализация расстановки и ключевых зон</li>
-              <li>Быстрее согласование и меньше правок на площадке</li>
-              <li>Понятно, что и где будет стоять</li>
-            </ul>
-            <button type="button" class="wf-btn primary" data-modal="3d">Обсудить 3D-макет</button>
-          </div>
-          <div class="slider-wrap">
-            <div class="placeholder ph-gallery">Слайдер</div>
-            <div class="slider-dots"><span class="active"></span><span></span><span></span><span></span></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 7) Портфолио -->
+    <!-- 5) Портфолио -->
     <section class="screen-section portfolio-row">
       <div class="container">
         <h2>Портфолио</h2>
-        <div class="grid cols-4 portfolio-cards">
-          <a class="card card-portfolio" href="/portfolio/kejsy/primer-kejsa/"><div class="card-portfolio-photo placeholder">Фото</div><h3>Кейс 1</h3></a>
-          <a class="card card-portfolio" href="/portfolio/kejsy/primer-kejsa/"><div class="card-portfolio-photo placeholder">Фото</div><h3>Кейс 2</h3></a>
-          <a class="card card-portfolio" href="/portfolio/kejsy/primer-kejsa/"><div class="card-portfolio-photo placeholder">Фото</div><h3>Кейс 3</h3></a>
-          <a class="card card-portfolio" href="/portfolio/kejsy/primer-kejsa/"><div class="card-portfolio-photo placeholder">Фото</div><h3>Кейс 4</h3></a>
+        <div class="grid portfolio-cards portfolio-cards-4">
+          <button type="button" class="card case-card card-btn" data-modal="case">
+            <div class="case-card__media"><span class="case-card__placeholder">Фото</span></div>
+            <div class="case-card__content"><h3>Кейс 1</h3></div>
+          </button>
+          <button type="button" class="card case-card card-btn" data-modal="case">
+            <div class="case-card__media"><span class="case-card__placeholder">Фото</span></div>
+            <div class="case-card__content"><h3>Кейс 2</h3></div>
+          </button>
+          <button type="button" class="card case-card card-btn" data-modal="case">
+            <div class="case-card__media"><span class="case-card__placeholder">Фото</span></div>
+            <div class="case-card__content"><h3>Кейс 3</h3></div>
+          </button>
+          <button type="button" class="card case-card card-btn" data-modal="case">
+            <div class="case-card__media"><span class="case-card__placeholder">Фото</span></div>
+            <div class="case-card__content"><h3>Кейс 4</h3></div>
+          </button>
         </div>
         <p class="portfolio-cta"><a href="/portfolio/" class="wf-btn">Смотреть все</a></p>
       </div>
@@ -211,8 +203,20 @@
       <div class="container">
         <h2>Контакты</h2>
         <div class="grid cols-2 contacts-grid">
-          <div class="form-side">
+          <div class="contact-info-side">
             <p class="contact-phone"><a href="tel:+79062027217">8 (906) 202-72-17</a></p>
+            <p style="margin: 0 0 8px; font-size: 15px; color: var(--muted); line-height: 1.6;">Детали исполнения задачи, возможность выезда и логистику подтверждаем после уточнения вводных.</p>
+            <p style="margin: 0 0 12px; font-size: 15px; color: var(--muted); line-height: 1.6;">Обращайтесь, обсудим ваш запрос.</p>
+            <ul style="margin: 0 0 16px; padding-left: 20px; font-size: 15px; color: var(--muted); line-height: 1.6;">
+              <li>Работаем на выезде в Северо-Западном и Центральном регионах.</li>
+              <li>Находимся в Великом Новгороде.</li>
+            </ul>
+            <div class="contacts-vk-box">
+              <p class="contacts-vk-label">Следите за нашими новостями</p>
+              <a href="https://vk.com/tekhnikaevent" target="_blank" rel="noopener" class="wf-btn">Вконтакте</a>
+            </div>
+          </div>
+          <div class="contact-form-side">
             <div class="contacts-form-box">
               <h3 class="contacts-form-title">Оставить заявку на обратный звонок</h3>
               <form class="wf-form wf-form-no-labels" action="#" method="post">
@@ -221,18 +225,11 @@
                 <textarea name="message" placeholder="Комментарий"></textarea>
                 <div class="form-checkbox">
                   <input type="checkbox" id="contacts-agree" name="agree" required />
-                  <label for="contacts-agree">Я соглашаюсь с <a href="/politika-konfidencialnosti/">политикой конфиденциальности</a> и принимаю условия <a href="/polzovatelskoe-soglashenie/">пользовательского соглашения</a></label>
+                  <label for="contacts-agree">Я соглашаюсь с <a href="/privacy-policy/" target="_blank" rel="noopener noreferrer">политикой конфиденциальности</a> и принимаю условия <a href="/soglasie-na-obrabotku/" target="_blank" rel="noopener noreferrer">пользовательского соглашения</a></label>
                 </div>
                 <button type="submit" class="wf-btn primary">Отправить</button>
               </form>
             </div>
-            <div class="contacts-vk-box">
-              <p class="contacts-vk-label">Следите за нашими новостями</p>
-              <a href="https://vk.com/tekhnikaevent" target="_blank" rel="noopener" class="wf-btn">Вконтакте</a>
-            </div>
-          </div>
-          <div class="contact-side">
-            <div class="placeholder contacts-map">Фото</div>
           </div>
         </div>
       </div>
@@ -241,20 +238,31 @@
 
   <footer class="site-footer">
     <div class="container">
-      <div>
-        <a class="brand" href="/">Техника событий</a>
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a class="brand" href="/">Техника событий</a>
+        </div>
+        <div class="footer-col">
+          <p class="footer-col-title">Услуги</p>
+          <a href="/uslugi/tehnicheskoe-obespechenie/">Техническое обеспечение под ключ</a>
+          <a href="/onlajn-translyacii/">Онлайн-трансляции</a>
+          <a href="/uslugi/arenda-oborudovaniya/">Аренда оборудования</a>
+        </div>
+        <div class="footer-col">
+          <p class="footer-col-title">О нас</p>
+          <a href="/o-kompanii/">О компании</a>
+          <a href="/kak-my-rabotaem/">Как мы работаем</a>
+          <a href="/meropriyatiya/">Типы мероприятий</a>
+        </div>
+        <div class="footer-col">
+          <a href="/portfolio/">Портфолио</a>
+          <a href="/kontakty/">Контакты</a>
+        </div>
       </div>
-      <nav class="footer-nav">
-        <a href="/">Главная</a>
-        <a href="/uslugi/">Услуги</a>
-        <a href="/portfolio/">Портфолио</a>
-        <a href="/o-kompanii/">О нас</a>
-        <a href="/kontakty/">Контакты</a>
-      </nav>
-      <div class="footer-legal" style="width: 100%;">
-        <a href="/politika-konfidencialnosti/">Политика конфиденциальности</a>
+      <div class="footer-legal">
+        <a href="/privacy-policy/" target="_blank" rel="noopener noreferrer">Политика конфиденциальности</a>
         <span style="margin: 0 8px;">·</span>
-        <a href="/politika-konfidencialnosti/#soglasie">Согласие на обработку персональных данных</a>
+        <a href="/soglasie-na-obrabotku/" target="_blank" rel="noopener noreferrer">Согласие на обработку персональных данных</a>
         <span style="margin: 0 8px;">·</span>
         <a href="#" data-modal="requisites">Реквизиты</a>
       </div>
@@ -262,6 +270,22 @@
   </footer>
 
   <!-- Modals -->
+  <div id="modal-case" class="modal-overlay" aria-hidden="true">
+    <div class="modal-box modal-case-box" style="position: relative;">
+      <button type="button" class="modal-close" aria-label="Закрыть" data-close-modal>&times;</button>
+      <div class="case-slider">
+        <div class="case-slider-track">
+          <div class="case-slide active"><div class="placeholder">Фото 1</div></div>
+          <div class="case-slide"><div class="placeholder">Фото 2</div></div>
+          <div class="case-slide"><div class="placeholder">Фото 3</div></div>
+        </div>
+        <button type="button" class="case-slider-prev" aria-label="Назад">‹</button>
+        <button type="button" class="case-slider-next" aria-label="Вперёд">›</button>
+      </div>
+      <h3 class="case-modal-title">Заголовок кейса</h3>
+      <p class="case-modal-desc">Описание кейса. Задача и решение, формат мероприятия, результат.</p>
+    </div>
+  </div>
   <div id="modal-smeta" class="modal-overlay" aria-hidden="true">
     <div class="modal-box" style="position: relative;">
       <button type="button" class="modal-close" aria-label="Закрыть" data-close-modal>&times;</button>
@@ -274,7 +298,7 @@
         <textarea name="message" placeholder="Формат, дата, площадка, пожелания"></textarea>
         <div class="form-checkbox">
           <input type="checkbox" id="smeta-agree" name="agree" required />
-          <label for="smeta-agree">Я соглашаюсь с <a href="/politika-konfidencialnosti/">политикой конфиденциальности</a> и принимаю условия <a href="/polzovatelskoe-soglashenie/">пользовательского соглашения</a></label>
+          <label for="smeta-agree">Я соглашаюсь с <a href="/privacy-policy/" target="_blank" rel="noopener noreferrer">политикой конфиденциальности</a> и принимаю условия <a href="/soglasie-na-obrabotku/" target="_blank" rel="noopener noreferrer">пользовательского соглашения</a></label>
         </div>
         <button type="submit" class="wf-btn primary">Отправить</button>
       </form>
@@ -290,7 +314,7 @@
         <textarea name="message" placeholder="Опишите задачу"></textarea>
         <div class="form-checkbox">
           <input type="checkbox" id="consult-agree" name="agree" required />
-          <label for="consult-agree">Я соглашаюсь с <a href="/politika-konfidencialnosti/">политикой конфиденциальности</a> и принимаю условия <a href="/polzovatelskoe-soglashenie/">пользовательского соглашения</a></label>
+          <label for="consult-agree">Я соглашаюсь с <a href="/privacy-policy/" target="_blank" rel="noopener noreferrer">политикой конфиденциальности</a> и принимаю условия <a href="/soglasie-na-obrabotku/" target="_blank" rel="noopener noreferrer">пользовательского соглашения</a></label>
         </div>
         <button type="submit" class="wf-btn primary">Отправить</button>
       </form>
@@ -307,7 +331,7 @@
         <textarea name="message" placeholder="Формат, количество участников, площадка"></textarea>
         <div class="form-checkbox">
           <input type="checkbox" id="komplekt-agree" name="agree" required />
-          <label for="komplekt-agree">Я соглашаюсь с <a href="/politika-konfidencialnosti/">политикой конфиденциальности</a> и принимаю условия <a href="/polzovatelskoe-soglashenie/">пользовательского соглашения</a></label>
+          <label for="komplekt-agree">Я соглашаюсь с <a href="/privacy-policy/" target="_blank" rel="noopener noreferrer">политикой конфиденциальности</a> и принимаю условия <a href="/soglasie-na-obrabotku/" target="_blank" rel="noopener noreferrer">пользовательского соглашения</a></label>
         </div>
         <button type="submit" class="wf-btn primary">Отправить</button>
       </form>
@@ -323,7 +347,7 @@
         <textarea name="message" placeholder="Мероприятие, площадка, пожелания"></textarea>
         <div class="form-checkbox">
           <input type="checkbox" id="3d-agree" name="agree" required />
-          <label for="3d-agree">Я соглашаюсь с <a href="/politika-konfidencialnosti/">политикой конфиденциальности</a> и принимаю условия <a href="/polzovatelskoe-soglashenie/">пользовательского соглашения</a></label>
+          <label for="3d-agree">Я соглашаюсь с <a href="/privacy-policy/" target="_blank" rel="noopener noreferrer">политикой конфиденциальности</a> и принимаю условия <a href="/soglasie-na-obrabotku/" target="_blank" rel="noopener noreferrer">пользовательского соглашения</a></label>
         </div>
         <button type="submit" class="wf-btn primary">Отправить</button>
       </form>
@@ -340,7 +364,7 @@
         <textarea name="message" placeholder="Комментарий"></textarea>
         <div class="form-checkbox">
           <input type="checkbox" id="zadacha-agree" name="agree" required />
-          <label for="zadacha-agree">Я соглашаюсь с <a href="/politika-konfidencialnosti/">политикой конфиденциальности</a> и принимаю условия <a href="/polzovatelskoe-soglashenie/">пользовательского соглашения</a></label>
+          <label for="zadacha-agree">Я соглашаюсь с <a href="/privacy-policy/" target="_blank" rel="noopener noreferrer">политикой конфиденциальности</a> и принимаю условия <a href="/soglasie-na-obrabotku/" target="_blank" rel="noopener noreferrer">пользовательского соглашения</a></label>
         </div>
         <button type="submit" class="wf-btn primary">Отправить</button>
         <p class="modal-footnote">Работаем по договору. Состав оборудования зависит от площадки и сценария.</p>
@@ -553,7 +577,7 @@
         <input type="tel" name="phone" placeholder="Телефон" />
         <div class="form-checkbox">
           <input type="checkbox" id="callback-agree" name="agree" required />
-          <label for="callback-agree">Я соглашаюсь с <a href="/politika-konfidencialnosti/">политикой конфиденциальности</a> и принимаю условия <a href="/polzovatelskoe-soglashenie/">пользовательского соглашения</a></label>
+          <label for="callback-agree">Я соглашаюсь с <a href="/privacy-policy/" target="_blank" rel="noopener noreferrer">политикой конфиденциальности</a> и принимаю условия <a href="/soglasie-na-obrabotku/" target="_blank" rel="noopener noreferrer">пользовательского соглашения</a></label>
         </div>
         <button type="submit" class="wf-btn primary">Отправить</button>
       </form>

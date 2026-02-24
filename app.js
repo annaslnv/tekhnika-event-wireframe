@@ -12,17 +12,23 @@
     });
   }
 
-  // Active link: точное совпадение или вложенный путь (для Услуги /uslugi/*)
+  // Active link только в шапке: выделяем пункт меню только на текущей странице
   const path = (window.location.pathname.replace(/\/+$/, '') || '/');
-  document.querySelectorAll('nav a[href]').forEach(function (a) {
-    try {
-      const url = new URL(a.getAttribute('href'), window.location.origin);
-      const p = (url.pathname.replace(/\/+$/, '') || '/');
-      const exact = p === path;
-      const parentMatch = p !== '/' && path !== p && path.indexOf(p + '/') === 0;
-      if (exact || parentMatch) a.setAttribute('aria-current', 'page');
-    } catch (e) {}
-  });
+  const siteNav = document.getElementById('site-nav');
+  if (siteNav) {
+    siteNav.querySelectorAll('a[href]').forEach(function (a) {
+      a.removeAttribute('aria-current');
+    });
+    siteNav.querySelectorAll('a[href]').forEach(function (a) {
+      try {
+        const url = new URL(a.getAttribute('href'), window.location.origin);
+        const p = (url.pathname.replace(/\/+$/, '') || '/');
+        const exact = p === path;
+        const parentMatch = p !== '/' && path !== p && path.indexOf(p + '/') === 0;
+        if (exact || parentMatch) a.setAttribute('aria-current', 'page');
+      } catch (e) {}
+    });
+  }
 
   // Modals
   function closeAllModals() {
@@ -40,6 +46,10 @@
         closeAllModals();
         modal.classList.add('is-open');
         modal.setAttribute('aria-hidden', 'false');
+        if (id === 'case') {
+          var slides = modal.querySelectorAll('.case-slide');
+          slides.forEach(function (s, i) { s.classList.toggle('active', i === 0); });
+        }
       }
     });
   });
@@ -63,6 +73,27 @@
   });
   document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape') closeAllModals();
+  });
+
+  // Case modal: slider prev/next
+  document.querySelectorAll('#modal-case').forEach(function (modal) {
+    var slides = modal.querySelectorAll('.case-slide');
+    var prev = modal.querySelector('.case-slider-prev');
+    var next = modal.querySelector('.case-slider-next');
+    if (slides.length && prev && next) {
+      prev.addEventListener('click', function () {
+        var i = Array.prototype.indexOf.call(slides, modal.querySelector('.case-slide.active'));
+        slides[i].classList.remove('active');
+        i = i <= 0 ? slides.length - 1 : i - 1;
+        slides[i].classList.add('active');
+      });
+      next.addEventListener('click', function () {
+        var i = Array.prototype.indexOf.call(slides, modal.querySelector('.case-slide.active'));
+        slides[i].classList.remove('active');
+        i = i >= slides.length - 1 ? 0 : i + 1;
+        slides[i].classList.add('active');
+      });
+    }
   });
 
   // Tabs (portfolio filter)

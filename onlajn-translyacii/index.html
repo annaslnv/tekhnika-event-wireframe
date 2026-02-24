@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Онлайн-трансляции — Техника событий</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/"><span>Техника</span><span>событий</span></a>
+      <button id="nav-toggle" class="nav-toggle" type="button" aria-label="Меню" aria-expanded="false">Меню</button>
+      <nav id="site-nav" class="site-nav" aria-label="Навигация">
+        <a href="/">Главная</a>
+        <div class="nav-parent">
+          <a href="/uslugi/" class="nav-parent-label">Услуги</a>
+          <div class="nav-dropdown nav-dropdown-simple">
+            <a class="nav-dropdown-item" href="/uslugi/tehnicheskoe-obespechenie/">Техническое обеспечение под ключ</a>
+            <a class="nav-dropdown-item" href="/onlajn-translyacii/">Организация онлайн-трансляций</a>
+            <a class="nav-dropdown-item" href="/uslugi/arenda-oborudovaniya/">Аренда оборудования</a>
+          </div>
+        </div>
+        <a href="/portfolio/">Портфолио</a>
+        <div class="nav-parent">
+          <span class="nav-parent-label">О нас</span>
+          <div class="nav-dropdown nav-dropdown-simple">
+            <a class="nav-dropdown-item" href="/o-kompanii/">О компании</a>
+            <a class="nav-dropdown-item" href="/kak-my-rabotaem/">Как мы работаем</a>
+            <a class="nav-dropdown-item" href="/meropriyatiya/">Типы мероприятий</a>
+          </div>
+        </div>
+        <a href="/kontakty/">Контакты</a>
+      </nav>
+      <div class="header-cta">
+        <button type="button" class="btn-call" data-modal="callback">Обратный звонок</button>
+        <a class="header-phone" href="tel:+79062027217">8 (906) 202-72-17</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Экран 1 — Hero -->
+    <section class="hero-full">
+      <div class="hero-bg">
+        <div class="placeholder ph-hero">Фото / Видео</div>
+      </div>
+      <div class="container">
+        <h1>Техническое обеспечение онлайн-трансляций</h1>
+        <p class="hero-sub">Возьмем на себя подготовку, настройку и контроль эфира на площадке. Обеспечим стабильную работу техники на каждом этапе и доступность просмотра на любых устройствах.</p>
+        <ul class="hero-bullets">
+          <li>тестируем канал связи и схему подключения до старта</li>
+          <li>контролируем звук/картинку/сигнал во время эфира</li>
+          <li>работаем по договору, фиксируем состав в смете</li>
+        </ul>
+        <div class="hero-cta">
+          <button type="button" class="wf-btn primary" data-modal="zadacha">Обсудить задачу</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Экран 2 — Форматы трансляций -->
+    <section class="screen-section">
+      <div class="container">
+        <h2>Какие форматы делаем</h2>
+        <ul class="direction-list" style="list-style: none; padding: 0; margin: 0;">
+          <li class="card" style="padding: 20px; margin-bottom: 12px;">Прямая трансляция с площадки (сцена, зал, open-air)</li>
+          <li class="card" style="padding: 20px; margin-bottom: 12px;">Гибридный формат (офлайн + онлайн-аудитория)</li>
+          <li class="card" style="padding: 20px; margin-bottom: 12px;">Трансляция презентаций и выступлений спикеров</li>
+          <li class="card" style="padding: 20px; margin-bottom: 12px;">Многокамерная схема (по задаче)</li>
+          <li class="card" style="padding: 20px; margin-bottom: 12px;">Запись эфира и исходников (по запросу)</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Экран 3 — Что мы делаем -->
+    <section class="screen-section">
+      <div class="container">
+        <h2>Что берём на себя</h2>
+        <ul style="padding-left: 20px; line-height: 2; color: var(--muted);">
+          <li>собираем вводные: формат, тайминг, платформа, сценарий</li>
+          <li>оцениваем площадку и условия связи (интернет/покрытие/резервы)</li>
+          <li>проектируем схему: источники → коммутация → выдача в эфир</li>
+          <li>подбираем и готовим оборудование под задачу</li>
+          <li>настраиваем, проводим тестовый прогон и проверку сигнала</li>
+          <li>ведём эфир: мониторинг, переключения, контроль качества</li>
+          <li>оперативно решаем технические вопросы на месте</li>
+          <li>после мероприятия — сворачиваем, передаём материалы (если нужно)</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Экран 4 — Что входит -->
+    <section class="screen-section">
+      <div class="container">
+        <h2>Что входит в трансляцию</h2>
+        <div class="grid cols-2" style="gap: 32px;">
+          <div class="card" style="padding: 24px;">
+            <h3 style="margin: 0 0 16px;">Включено</h3>
+            <ul style="margin: 0; padding-left: 20px; line-height: 1.8;">
+              <li>подготовка схемы и технических требований</li>
+              <li>настройка и тестовый прогон перед стартом</li>
+              <li>контроль трансляции во время мероприятия</li>
+              <li>базовая коммутация и организация выдачи сигнала</li>
+            </ul>
+          </div>
+          <div class="card" style="padding: 24px;">
+            <h3 style="margin: 0 0 16px;">По запросу</h3>
+            <ul style="margin: 0; padding-left: 20px; line-height: 1.8;">
+              <li>резервирование критичных узлов (связь/сигнал/питание)</li>
+              <li>многокамерная схема и режиссура</li>
+              <li>интеграция с LED/экранами и видеоконтентом</li>
+              <li>запись/выдача исходников и готового файла</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Почему нас выбирают -->
+    <section class="screen-section">
+      <div class="container">
+        <h2>Почему нас выбирают?</h2>
+        <div class="grid cols-2" style="gap: 32px; align-items: start;">
+          <div>
+            <p style="margin: 0 0 16px; font-size: 16px; color: var(--muted); line-height: 1.6;">Работаем по договору, фиксируем состав работ и сроки. Следим за звуком, картинкой и сигналом во время трансляции и быстро решаем вопросы на площадке.</p>
+            <p style="margin: 0; font-size: 16px; color: var(--muted); line-height: 1.6;">Провели множество для официальных мероприятий и знаем детали процессов и согласования. Держим все под контролем, взаимодействуя с командой заказчика.</p>
+          </div>
+          <div class="placeholder ph-16x9" style="min-height: 240px;">Фото</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Экран 6 — Что нужно от вас -->
+    <section class="screen-section">
+      <div class="container">
+        <h2>Что нужно от вас на старте</h2>
+        <ul style="padding-left: 20px; line-height: 2; color: var(--muted);">
+          <li>формат: онлайн или гибрид, количество спикеров</li>
+          <li>площадка: адрес, фото/схема, тайминг монтажа</li>
+          <li>платформа/канал трансляции (куда выводим эфир)</li>
+          <li>материалы: презентации/ролики/графика и сроки</li>
+          <li>интернет: тип подключения, скорость, ограничения площадки</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Экран 7 — CTA + контакты -->
+    <section class="screen-section">
+      <div class="container">
+        <h2>Обсудим трансляцию под вашу площадку</h2>
+        <p class="hero-sub" style="margin: 0 0 24px;">Коротко опишите формат — мы свяжемся с вами и предложим решение и понятную смету.</p>
+        <button type="button" class="wf-btn primary" data-modal="zadacha">Обсудить задачу</button>
+      </div>
+    </section>
+
+    <section class="contacts-block" id="contacts">
+      <div class="container">
+        <h2>Контакты</h2>
+        <div class="grid cols-2 contacts-grid">
+          <div class="contact-info-side">
+            <p class="contact-phone"><a href="tel:+79062027217">8 (906) 202-72-17</a></p>
+            <p style="margin: 0 0 8px; font-size: 15px; color: var(--muted); line-height: 1.6;">Детали исполнения задачи, возможность выезда и логистику подтверждаем после уточнения вводных.</p>
+            <p style="margin: 0 0 12px; font-size: 15px; color: var(--muted); line-height: 1.6;">Обращайтесь, обсудим ваш запрос.</p>
+            <ul style="margin: 0 0 16px; padding-left: 20px; font-size: 15px; color: var(--muted); line-height: 1.6;">
+              <li>Работаем на выезде в Северо-Западном и Центральном регионах.</li>
+              <li>Находимся в Великом Новгороде.</li>
+            </ul>
+            <div class="contacts-vk-box">
+              <p class="contacts-vk-label">Следите за нашими новостями</p>
+              <a href="https://vk.com/tekhnikaevent" target="_blank" rel="noopener" class="wf-btn">Вконтакте</a>
+            </div>
+          </div>
+          <div class="contact-form-side">
+            <div class="contacts-form-box">
+              <h3 class="contacts-form-title">Оставить заявку на обратный звонок</h3>
+              <form class="wf-form wf-form-no-labels" action="#" method="post">
+                <input type="text" name="name" placeholder="Имя" />
+                <input type="tel" name="phone" placeholder="Телефон" />
+                <textarea name="message" placeholder="Комментарий"></textarea>
+                <div class="form-checkbox">
+                  <input type="checkbox" id="ot-agree" name="agree" required />
+                  <label for="ot-agree">Я соглашаюсь с <a href="/privacy-policy/" target="_blank" rel="noopener noreferrer">политикой конфиденциальности</a> и принимаю условия <a href="/soglasie-na-obrabotku/" target="_blank" rel="noopener noreferrer">пользовательского соглашения</a></label>
+                </div>
+                <button type="submit" class="wf-btn primary">Отправить</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a class="brand" href="/">Техника событий</a>
+        </div>
+        <div class="footer-col">
+          <p class="footer-col-title">Услуги</p>
+          <a href="/uslugi/tehnicheskoe-obespechenie/">Техническое обеспечение под ключ</a>
+          <a href="/onlajn-translyacii/">Онлайн-трансляции</a>
+          <a href="/uslugi/arenda-oborudovaniya/">Аренда оборудования</a>
+        </div>
+        <div class="footer-col">
+          <p class="footer-col-title">О нас</p>
+          <a href="/o-kompanii/">О компании</a>
+          <a href="/kak-my-rabotaem/">Как мы работаем</a>
+          <a href="/meropriyatiya/">Типы мероприятий</a>
+        </div>
+        <div class="footer-col">
+          <a href="/portfolio/">Портфолио</a>
+          <a href="/kontakty/">Контакты</a>
+        </div>
+      </div>
+      <div class="footer-legal">
+        <a href="/privacy-policy/" target="_blank" rel="noopener noreferrer">Политика конфиденциальности</a>
+        <span style="margin: 0 8px;">·</span>
+        <a href="/soglasie-na-obrabotku/" target="_blank" rel="noopener noreferrer">Согласие на обработку персональных данных</a>
+        <span style="margin: 0 8px;">·</span>
+        <a href="#" data-modal="requisites">Реквизиты</a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="modal-requisites" class="modal-overlay" aria-hidden="true">
+    <div class="modal-box modal-content-box" style="position: relative;">
+      <button type="button" class="modal-close" aria-label="Закрыть" data-close-modal>&times;</button>
+      <h3>Реквизиты</h3>
+      <p class="modal-subtitle">Описание</p>
+    </div>
+  </div>
+  <div id="modal-zadacha" class="modal-overlay" aria-hidden="true">
+    <div class="modal-box modal-form-box" style="position: relative;">
+      <button type="button" class="modal-close" aria-label="Закрыть" data-close-modal>&times;</button>
+      <h3>Обсудить задачу</h3>
+      <p class="modal-subtitle">Опишите формат и задачу — мы свяжемся с вами.</p>
+      <form class="wf-form wf-form-no-labels">
+        <input type="text" name="name" placeholder="Имя" />
+        <input type="tel" name="phone" placeholder="Телефон" />
+        <textarea name="message" placeholder="Формат, площадка, дата"></textarea>
+        <div class="form-checkbox">
+          <input type="checkbox" id="zadacha-ot-agree" name="agree" required />
+          <label for="zadacha-ot-agree">Я соглашаюсь с <a href="/privacy-policy/" target="_blank" rel="noopener noreferrer">политикой конфиденциальности</a> и принимаю условия <a href="/soglasie-na-obrabotku/" target="_blank" rel="noopener noreferrer">пользовательского соглашения</a></label>
+        </div>
+        <button type="submit" class="wf-btn primary">Отправить</button>
+      </form>
+    </div>
+  </div>
+  <div id="modal-callback" class="modal-overlay" aria-hidden="true">
+    <div class="modal-box" style="position: relative;">
+      <button type="button" class="modal-close" aria-label="Закрыть" data-close-modal>&times;</button>
+      <h3>Обратный звонок</h3>
+      <form class="wf-form">
+        <label>Имя</label>
+        <input type="text" name="name" placeholder="Ваше имя" />
+        <label>Телефон</label>
+        <input type="tel" name="phone" placeholder="Телефон" />
+        <div class="form-checkbox">
+          <input type="checkbox" id="callback-ot-agree" name="agree" required />
+          <label for="callback-ot-agree">Я соглашаюсь с <a href="/privacy-policy/" target="_blank" rel="noopener noreferrer">политикой конфиденциальности</a> и принимаю условия <a href="/soglasie-na-obrabotku/" target="_blank" rel="noopener noreferrer">пользовательского соглашения</a></label>
+        </div>
+        <button type="submit" class="wf-btn primary">Отправить</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>

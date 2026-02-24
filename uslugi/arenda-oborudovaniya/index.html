@@ -17,20 +17,16 @@
           <a href="/uslugi/" class="nav-parent-label">Услуги</a>
           <div class="nav-dropdown nav-dropdown-simple">
             <a class="nav-dropdown-item" href="/uslugi/tehnicheskoe-obespechenie/">Техническое обеспечение под ключ</a>
+            <a class="nav-dropdown-item" href="/onlajn-translyacii/">Организация онлайн-трансляций</a>
             <a class="nav-dropdown-item" href="/uslugi/arenda-oborudovaniya/">Аренда оборудования</a>
-            <a class="nav-dropdown-item" href="/gotovye-resheniya/">Готовые решения</a>
           </div>
         </div>
         <a href="/portfolio/">Портфолио</a>
         <div class="nav-parent">
-          <a href="/o-kompanii/" class="nav-parent-label">О нас</a>
+          <span class="nav-parent-label">О нас</span>
           <div class="nav-dropdown nav-dropdown-simple">
-            <a class="nav-dropdown-item" href="/o-kompanii/#o-kompanii">О компании</a>
-            <a class="nav-dropdown-item" href="/o-kompanii/#kak-rabotaem">Как мы работаем</a>
-            <a class="nav-dropdown-item" href="/o-kompanii/#tipy-meropriyatiy">Типы мероприятий</a>
-            <a class="nav-dropdown-item" href="/o-kompanii/#geografiya">География работ</a>
-            <a class="nav-dropdown-item" href="/o-kompanii/#otzyvy">Отзывы и рекомендации</a>
-            <a class="nav-dropdown-item" href="/o-kompanii/#faq">Вопросы и ответы</a>
+            <a class="nav-dropdown-item" href="/o-kompanii/">О компании</a>
+            <a class="nav-dropdown-item" href="/kak-my-rabotaem/">Как мы работаем</a>
           </div>
         </div>
         <a href="/kontakty/">Контакты</a>
@@ -65,64 +61,65 @@
     <section class="screen-section">
       <div class="container">
         <h2>Что мы предлагаем</h2>
-        <div class="grid cols-2 cols-4-wide">
-          <a class="card card-with-photo-top" href="/uslugi/arenda-oborudovaniya/arenda-zvuka/">
-            <div class="placeholder card-photo">Фото</div>
-            <div class="card-body">
+        <div class="grid cols-2 cols-4-wide offer-cards">
+          <button type="button" class="card offer-card card-btn" data-modal="ar-zvuk">
+            <div class="offer-card__media"><span class="offer-card__placeholder">Фото</span></div>
+            <div class="offer-card__content">
               <h3>Звук</h3>
-              <p>Микрофоны, акустика, пульт.</p>
-              <span class="card-link">Подробнее →</span>
+              <p>Микрофоны, акустика, пульт</p>
             </div>
-          </a>
-          <a class="card card-with-photo-top" href="/uslugi/arenda-oborudovaniya/arenda-sveta/">
-            <div class="placeholder card-photo">Фото</div>
-            <div class="card-body">
+          </button>
+          <button type="button" class="card offer-card card-btn" data-modal="ar-svet">
+            <div class="offer-card__media"><span class="offer-card__placeholder">Фото</span></div>
+            <div class="offer-card__content">
               <h3>Свет</h3>
               <p>Оборудование для сцены и площадки</p>
-              <span class="card-link">Подробнее →</span>
             </div>
-          </a>
-          <a class="card card-with-photo-top" href="/uslugi/arenda-oborudovaniya/arenda-video/">
-            <div class="placeholder card-photo">Фото</div>
-            <div class="card-body">
+          </button>
+          <button type="button" class="card offer-card card-btn" data-modal="ar-video">
+            <div class="offer-card__media"><span class="offer-card__placeholder">Фото</span></div>
+            <div class="offer-card__content">
               <h3>Видео</h3>
-              <p>Техника для вывода контента и поддержки презентаций.</p>
-              <span class="card-link">Подробнее →</span>
+              <p>Вывод контента и поддержка презентаций</p>
             </div>
-          </a>
-          <a class="card card-with-photo-top" href="/uslugi/arenda-oborudovaniya/arenda-led/">
-            <div class="placeholder card-photo">Фото</div>
-            <div class="card-body">
+          </button>
+          <button type="button" class="card offer-card card-btn" data-modal="ar-led">
+            <div class="offer-card__media"><span class="offer-card__placeholder">Фото</span></div>
+            <div class="offer-card__content">
               <h3>LED</h3>
-              <p>Экраны под формат и площадку.</p>
-              <span class="card-link">Подробнее →</span>
+              <p>Экраны под формат и площадку</p>
             </div>
-          </a>
+          </button>
         </div>
       </div>
     </section>
 
-    <!-- 2.1) Дополнительно к аренде -->
+    <!-- 2.1) Дополнительные услуги -->
     <section class="screen-section">
       <div class="container">
-        <h2>Дополнительно к аренде</h2>
+        <h2>Дополнительные услуги</h2>
         <div class="grid cols-2" style="align-items: start; gap: 40px;">
-          <a class="card card-with-photo-top" href="/uslugi/tehnicheskoe-obespechenie/tehpersonal/">
-            <div class="placeholder card-photo">Фото</div>
+          <div class="card card-with-photo-top">
+            <div class="card-photo card-photo-placeholder">Фото</div>
             <div class="card-body">
               <h3>Технический персонал на площадке</h3>
               <p>Инженер/техспециалист для монтажа, коммутации и контроля оборудования во время мероприятия. Помогает избежать сбоев и быстро решает вопросы по ходу программы.</p>
-              <span class="card-link">Подробнее →</span>
             </div>
-          </a>
-          <a class="card card-with-photo-top" href="/uslugi/tehnicheskoe-obespechenie/logistika/">
-            <div class="placeholder card-photo">Фото</div>
+          </div>
+          <div class="card card-with-photo-top">
+            <div class="card-photo card-photo-placeholder">Фото</div>
             <div class="card-body">
               <h3>Логистика и выезд</h3>
               <p>Доставка и вывоз оборудования по таймингу мероприятия. Координация времени, подъезда и разгрузки — чтобы техника была на площадке вовремя.</p>
-              <span class="card-link">Подробнее →</span>
             </div>
-          </a>
+          </div>
+          <div class="card card-with-photo-top">
+            <div class="card-photo card-photo-placeholder">Фото</div>
+            <div class="card-body">
+              <h3>3D-макеты по запросу</h3>
+              <p>Покажем, как будет выглядеть сцена, свет и звук ещё до монтажа. Визуализация расстановки и ключевых зон — так проще согласовать решение с заказчиком и площадкой, быстрее согласование и меньше правок на площадке.</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -174,19 +171,31 @@
       </div>
     </section>
 
-    <!-- 5) Типы мероприятий -->
+    <!-- 5) Помогаем сосредоточиться на главном -->
     <section class="screen-section">
       <div class="container">
-        <h2>Типы мероприятий, с которыми работаем</h2>
-        <div class="grid cols-3 event-cards-js">
+        <h2>Помогаем сосредоточиться на главном</h2>
+        <p class="hero-sub" style="margin: 0 0 24px;">— создании интересного и запоминающегося мероприятия.</p>
+        <div class="grid cols-3 event-cards-js" style="margin-bottom: 24px;">
           <button type="button" class="card card-event card-btn" data-modal="event-koncerty"><div class="card-event-photo placeholder">Фото</div><h3>Концерты</h3></button>
           <button type="button" class="card card-event card-btn" data-modal="event-chastnye"><div class="card-event-photo placeholder">Фото</div><h3>Частные праздники</h3></button>
           <button type="button" class="card card-event card-btn" data-modal="event-prezentacii"><div class="card-event-photo placeholder">Фото</div><h3>Презентации</h3></button>
+        </div>
+        <div class="grid cols-3" style="gap: 24px; align-items: start;">
           <button type="button" class="card card-event card-btn" data-modal="event-konferencii"><div class="card-event-photo placeholder">Фото</div><h3>Конференции</h3></button>
           <button type="button" class="card card-event card-btn" data-modal="event-openair"><div class="card-event-photo placeholder">Фото</div><h3>Open-air</h3></button>
-          <button type="button" class="card card-event card-btn" data-modal="event-online"><div class="card-event-photo placeholder">Фото</div><h3>Онлайн-трансляции</h3></button>
+          <div style="padding: 20px; background: var(--card-bg, #f5f5f5); border-radius: var(--radius, 8px);">
+            <p style="margin: 0 0 16px; color: var(--muted); line-height: 1.6;">Также работаем с форматами по индивидуальному запросу.</p>
+            <button type="button" class="wf-btn primary" data-modal="zadacha">Обсудить задачу</button>
+          </div>
         </div>
-        <p style="margin: 20px 0 0; color: var(--muted); font-size: 15px;">А также мероприятия по индивидуальному запросу.</p>
+        <h2 style="margin-top: 48px; margin-bottom: 20px;">Для кого подбираем техрешения</h2>
+        <div class="grid cols-2" style="gap: 24px;">
+          <div class="card" style="padding: 24px;"><h3 style="margin: 0 0 8px;">Государственные и муниципальные площадки</h3><p style="margin: 0; color: var(--muted); line-height: 1.6;">Официальные и городские мероприятия: работаем по регламентам, документам и срокам.</p></div>
+          <div class="card" style="padding: 24px;"><h3 style="margin: 0 0 8px;">Компании и бренды</h3><p style="margin: 0; color: var(--muted); line-height: 1.6;">Корпоративы и презентации: решаем задачи бренда, составляем чёткую смету и план работ.</p></div>
+          <div class="card" style="padding: 24px;"><h3 style="margin: 0 0 8px;">Частные заказчики</h3><p style="margin: 0; color: var(--muted); line-height: 1.6;">Свадьбы и семейные события: обеспечиваем чистый звук, высокое качество видео и световых решений, ничего лишнего, по бюджету и без суеты.</p></div>
+          <div class="card" style="padding: 24px;"><h3 style="margin: 0 0 8px;">Event-агентства и организаторы</h3><p style="margin: 0; color: var(--muted); line-height: 1.6;">Встраиваемся в команду проекта: действуем по ТЗ, соблюдаем тайминг, быстро реагируем на площадке.</p></div>
+        </div>
       </div>
     </section>
 
@@ -228,8 +237,20 @@
       <div class="container">
         <h2>Контакты</h2>
         <div class="grid cols-2 contacts-grid">
-          <div class="form-side">
+          <div class="contact-info-side">
             <p class="contact-phone"><a href="tel:+79062027217">8 (906) 202-72-17</a></p>
+            <p style="margin: 0 0 8px; font-size: 15px; color: var(--muted); line-height: 1.6;">Детали исполнения задачи, возможность выезда и логистику подтверждаем после уточнения вводных.</p>
+            <p style="margin: 0 0 12px; font-size: 15px; color: var(--muted); line-height: 1.6;">Обращайтесь, обсудим ваш запрос.</p>
+            <ul style="margin: 0 0 16px; padding-left: 20px; font-size: 15px; color: var(--muted); line-height: 1.6;">
+              <li>Работаем на выезде в Северо-Западном и Центральном регионах.</li>
+              <li>Находимся в Великом Новгороде.</li>
+            </ul>
+            <div class="contacts-vk-box">
+              <p class="contacts-vk-label">Следите за нашими новостями</p>
+              <a href="https://vk.com/tekhnikaevent" target="_blank" rel="noopener" class="wf-btn">Вконтакте</a>
+            </div>
+          </div>
+          <div class="contact-form-side">
             <div class="contacts-form-box">
               <h3 class="contacts-form-title">Оставить заявку на обратный звонок</h3>
               <form class="wf-form wf-form-no-labels" action="#" method="post">
@@ -238,18 +259,11 @@
                 <textarea name="message" placeholder="Комментарий"></textarea>
                 <div class="form-checkbox">
                   <input type="checkbox" id="ao-contacts-agree" name="agree" required />
-                  <label for="ao-contacts-agree">Я соглашаюсь с <a href="/politika-konfidencialnosti/">политикой конфиденциальности</a> и принимаю условия <a href="/polzovatelskoe-soglashenie/">пользовательского соглашения</a></label>
+                  <label for="ao-contacts-agree">Я соглашаюсь с <a href="/privacy-policy/" target="_blank" rel="noopener noreferrer">политикой конфиденциальности</a> и принимаю условия <a href="/soglasie-na-obrabotku/" target="_blank" rel="noopener noreferrer">пользовательского соглашения</a></label>
                 </div>
                 <button type="submit" class="wf-btn primary">Отправить</button>
               </form>
             </div>
-            <div class="contacts-vk-box">
-              <p class="contacts-vk-label">Следите за нашими новостями</p>
-              <a href="https://vk.com/tekhnikaevent" target="_blank" rel="noopener" class="wf-btn">Вконтакте</a>
-            </div>
-          </div>
-          <div class="contact-side">
-            <div class="placeholder contacts-map">Фото</div>
           </div>
         </div>
       </div>
@@ -258,20 +272,31 @@
 
   <footer class="site-footer">
     <div class="container">
-      <div>
-        <a class="brand" href="/">Техника событий</a>
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a class="brand" href="/">Техника событий</a>
+        </div>
+        <div class="footer-col">
+          <p class="footer-col-title">Услуги</p>
+          <a href="/uslugi/tehnicheskoe-obespechenie/">Техническое обеспечение под ключ</a>
+          <a href="/onlajn-translyacii/">Онлайн-трансляции</a>
+          <a href="/uslugi/arenda-oborudovaniya/">Аренда оборудования</a>
+        </div>
+        <div class="footer-col">
+          <p class="footer-col-title">О нас</p>
+          <a href="/o-kompanii/">О компании</a>
+          <a href="/kak-my-rabotaem/">Как мы работаем</a>
+          <a href="/meropriyatiya/">Типы мероприятий</a>
+        </div>
+        <div class="footer-col">
+          <a href="/portfolio/">Портфолио</a>
+          <a href="/kontakty/">Контакты</a>
+        </div>
       </div>
-      <nav class="footer-nav">
-        <a href="/">Главная</a>
-        <a href="/uslugi/">Услуги</a>
-        <a href="/portfolio/">Портфолио</a>
-        <a href="/o-kompanii/">О нас</a>
-        <a href="/kontakty/">Контакты</a>
-      </nav>
-      <div class="footer-legal" style="width: 100%;">
-        <a href="/politika-konfidencialnosti/">Политика конфиденциальности</a>
+      <div class="footer-legal">
+        <a href="/privacy-policy/" target="_blank" rel="noopener noreferrer">Политика конфиденциальности</a>
         <span style="margin: 0 8px;">·</span>
-        <a href="/politika-konfidencialnosti/#soglasie">Согласие на обработку персональных данных</a>
+        <a href="/soglasie-na-obrabotku/" target="_blank" rel="noopener noreferrer">Согласие на обработку персональных данных</a>
         <span style="margin: 0 8px;">·</span>
         <a href="#" data-modal="requisites">Реквизиты</a>
       </div>
@@ -297,11 +322,86 @@
         <textarea name="message" placeholder="Комментарий"></textarea>
         <div class="form-checkbox">
           <input type="checkbox" id="zadacha-ao-agree" name="agree" required />
-          <label for="zadacha-ao-agree">Я соглашаюсь с <a href="/politika-konfidencialnosti/">политикой конфиденциальности</a> и принимаю условия <a href="/polzovatelskoe-soglashenie/">пользовательского соглашения</a></label>
+          <label for="zadacha-ao-agree">Я соглашаюсь с <a href="/privacy-policy/" target="_blank" rel="noopener noreferrer">политикой конфиденциальности</a> и принимаю условия <a href="/soglasie-na-obrabotku/" target="_blank" rel="noopener noreferrer">пользовательского соглашения</a></label>
         </div>
         <button type="submit" class="wf-btn primary">Отправить</button>
         <p class="modal-footnote">Работаем по договору. Состав оборудования зависит от площадки и сценария.</p>
       </form>
+    </div>
+  </div>
+  <div id="modal-ar-zvuk" class="modal-overlay" aria-hidden="true">
+    <div class="modal-box modal-content-box" style="position: relative;">
+      <button type="button" class="modal-close" aria-label="Закрыть" data-close-modal>&times;</button>
+      <h3>Аренда звукового оборудования</h3>
+      <p class="modal-subtitle">Подберём комплект под формат и площадку — для речи, музыки и смешанных программ.</p>
+      <p class="modal-block-title">Что входит в аренду:</p>
+      <ul class="modal-list">
+        <li>комплектация под задачу</li>
+        <li>проверка перед выдачей</li>
+        <li>инструкции по подключению</li>
+      </ul>
+      <p class="modal-block-title">По запросу:</p>
+      <ul class="modal-list">
+        <li>доставка, монтаж и настройка</li>
+        <li>работа звукооператора на площадке</li>
+      </ul>
+      <button type="button" class="wf-btn primary" data-modal="zadacha">Обсудить запрос</button>
+    </div>
+  </div>
+  <div id="modal-ar-svet" class="modal-overlay" aria-hidden="true">
+    <div class="modal-box modal-content-box" style="position: relative;">
+      <button type="button" class="modal-close" aria-label="Закрыть" data-close-modal>&times;</button>
+      <h3>Аренда светового оборудования</h3>
+      <p class="modal-subtitle">— от базовой подсветки до сценариев для выступлений.</p>
+      <p class="modal-block-title">Что входит в аренду:</p>
+      <ul class="modal-list">
+        <li>подбор комплекта под формат</li>
+        <li>проверка и готовность к работе</li>
+        <li>рекомендации по размещению/подключению</li>
+      </ul>
+      <p class="modal-block-title">По запросу:</p>
+      <ul class="modal-list">
+        <li>монтаж, настройка и управление светом на площадке</li>
+      </ul>
+      <button type="button" class="wf-btn primary" data-modal="zadacha">Обсудить запрос</button>
+    </div>
+  </div>
+  <div id="modal-ar-video" class="modal-overlay" aria-hidden="true">
+    <div class="modal-box modal-content-box" style="position: relative;">
+      <button type="button" class="modal-close" aria-label="Закрыть" data-close-modal>&times;</button>
+      <h3>Аренда видеооборудования</h3>
+      <p class="modal-subtitle">Всё необходимое, чтобы обеспечить стабильный вывод материалов на площадке.</p>
+      <p class="modal-block-title">Что входит в аренду:</p>
+      <ul class="modal-list">
+        <li>подбор решения под задачу</li>
+        <li>проверка перед выдачей</li>
+        <li>рекомендации по форматам/подключению</li>
+      </ul>
+      <p class="modal-block-title">По запросу:</p>
+      <ul class="modal-list">
+        <li>доставка, коммутация на площадке</li>
+        <li>техконтроль во время мероприятия</li>
+      </ul>
+      <button type="button" class="wf-btn primary" data-modal="zadacha">Обсудить запрос</button>
+    </div>
+  </div>
+  <div id="modal-ar-led" class="modal-overlay" aria-hidden="true">
+    <div class="modal-box modal-content-box" style="position: relative;">
+      <button type="button" class="modal-close" aria-label="Закрыть" data-close-modal>&times;</button>
+      <h3>Аренда LED-экранов</h3>
+      <p class="modal-subtitle">Варианты под формат и площадку — чтобы контент был заметен аудитории.</p>
+      <p class="modal-block-title">Что входит в аренду:</p>
+      <ul class="modal-list">
+        <li>подбор конфигурации и комплектация</li>
+        <li>проверка перед выдачей</li>
+        <li>требования к контенту/подключению</li>
+      </ul>
+      <p class="modal-block-title">По запросу:</p>
+      <ul class="modal-list">
+        <li>доставка, монтаж и демонтаж</li>
+        <li>сопровождение инженера на площадке</li>
+      </ul>
+      <button type="button" class="wf-btn primary" data-modal="zadacha">Обсудить запрос</button>
     </div>
   </div>
   <div id="modal-ready-50" class="modal-overlay" aria-hidden="true">
@@ -498,7 +598,7 @@
         <input type="tel" name="phone" placeholder="Телефон" />
         <div class="form-checkbox">
           <input type="checkbox" id="callback-ao-agree" name="agree" required />
-          <label for="callback-ao-agree">Я соглашаюсь с <a href="/politika-konfidencialnosti/">политикой конфиденциальности</a> и принимаю условия <a href="/polzovatelskoe-soglashenie/">пользовательского соглашения</a></label>
+          <label for="callback-ao-agree">Я соглашаюсь с <a href="/privacy-policy/" target="_blank" rel="noopener noreferrer">политикой конфиденциальности</a> и принимаю условия <a href="/soglasie-na-obrabotku/" target="_blank" rel="noopener noreferrer">пользовательского соглашения</a></label>
         </div>
         <button type="submit" class="wf-btn primary">Отправить</button>
       </form>
